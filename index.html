@@ -1,0 +1,3370 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <title>لوکسوري | Luxuri Hotel - تجربة الفخامة المطلقة</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Almarai:wght@300;400;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=El+Messiri:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;400;500;700&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Devanagari:wght@300;400;500;700&display=swap"
+        rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            -webkit-tap-highlight-color: transparent;
+        }
+
+        :root {
+            --gold: #D4AF37;
+            --gold-light: #F4E4A6;
+            --gold-dark: #B8860B;
+            --platinum: #E5E4E2;
+            --onyx: #0F0F0F;
+            --charcoal: #1E1E1E;
+            --velvet: #2C041C;
+            --ivory: #FFFFF0;
+            --shadow: 0 25px 50px rgba(0, 0, 0, 0.5);
+            --transition: all 0.5s cubic-bezier(0.215, 0.610, 0.355, 1);
+            --glow: 0 0 30px rgba(212, 175, 55, 0.5);
+        }
+
+        body {
+            font-family: 'Almarai', sans-serif;
+            background-color: var(--onyx);
+            color: var(--ivory);
+            line-height: 1.6;
+            overflow-x: hidden;
+            scroll-behavior: smooth;
+        }
+
+        body[lang="en"],
+        body[lang="es"],
+        body[lang="fr"],
+        body[lang="ru"] {
+            font-family: 'Inter', sans-serif;
+        }
+
+        body[lang="zh"] {
+            font-family: 'Noto Sans SC', sans-serif;
+        }
+
+        body[lang="hi"] {
+            font-family: 'Noto Sans Devanagari', sans-serif;
+        }
+
+        .luxury-font {
+            font-family: 'El Messiri', serif;
+        }
+
+        body[lang="en"] .luxury-font,
+        body[lang="es"] .luxury-font,
+        body[lang="fr"] .luxury-font,
+        body[lang="ru"] .luxury-font {
+            font-family: 'Cinzel', serif;
+        }
+
+        body[lang="zh"] .luxury-font {
+            font-family: 'Noto Sans SC', serif;
+            font-weight: 500;
+        }
+
+        body[lang="hi"] .luxury-font {
+            font-family: 'Noto Sans Devanagari', serif;
+        }
+
+        .royal-font {
+            font-family: 'Cinzel', serif;
+        }
+
+        body[lang="zh"] .royal-font {
+            font-family: 'Noto Sans SC', sans-serif;
+        }
+
+        body[lang="hi"] .royal-font {
+            font-family: 'Noto Sans Devanagari', sans-serif;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 0 30px;
+        }
+
+        /* ===== الخلفيات والتأثيرات البصرية ===== */
+        .bg-pattern {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background:
+                radial-gradient(circle at 10% 20%, rgba(212, 175, 55, 0.05) 0%, transparent 25%),
+                radial-gradient(circle at 90% 80%, rgba(212, 175, 55, 0.05) 0%, transparent 25%),
+                linear-gradient(45deg, rgba(15, 15, 15, 0.97) 0%, rgba(30, 30, 30, 0.97) 100%);
+            z-index: -2;
+        }
+
+        .bg-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: url('https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?ixlib=rb-4.0.3&auto=format&fit=crop&w=2850&q=80');
+            background-size: cover;
+            opacity: 0.03;
+            z-index: -1;
+            filter: grayscale(100%);
+        }
+
+        @keyframes float {
+
+            0%,
+            100% {
+                transform: translateY(0) translateX(0);
+            }
+
+            25% {
+                transform: translateY(-15px) translateX(8px);
+            }
+
+            50% {
+                transform: translateY(8px) translateX(-8px);
+            }
+
+            75% {
+                transform: translateY(-8px) translateX(-5px);
+            }
+        }
+
+        @keyframes pulse-glow {
+            0% {
+                box-shadow: 0 0 0 0 rgba(212, 175, 55, 0.5);
+            }
+
+            70% {
+                box-shadow: 0 0 30px 20px rgba(212, 175, 55, 0);
+            }
+
+            100% {
+                box-shadow: 0 0 0 0 rgba(212, 175, 55, 0);
+            }
+        }
+
+        @keyframes shine {
+            0% {
+                background-position: -200% center;
+            }
+
+            100% {
+                background-position: 200% center;
+            }
+        }
+
+        @keyframes kenburns {
+            0% {
+                transform: scale(1);
+            }
+
+            100% {
+                transform: scale(1.1);
+            }
+        }
+
+        @keyframes heartbeat {
+
+            0%,
+            100% {
+                transform: scale(1);
+            }
+
+            50% {
+                transform: scale(1.2);
+            }
+        }
+
+        .floating {
+            animation: float 8s ease-in-out infinite;
+        }
+
+        .pulse-glow {
+            animation: pulse-glow 3s infinite;
+        }
+
+        .kenburns {
+            animation: kenburns 30s infinite alternate;
+        }
+
+        .heartbeat {
+            animation: heartbeat 1.5s infinite;
+        }
+
+        .gold-text {
+            background: linear-gradient(45deg,
+                    #D4AF37 0%, #F7EF8A 25%, #D4AF37 50%, #F7EF8A 75%, #D4AF37 100%);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+            background-size: 200% auto;
+            animation: shine 3s linear infinite;
+        }
+
+        .shine-effect {
+            position: relative;
+            overflow: hidden;
+        }
+
+        .shine-effect::after {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -60%;
+            width: 20%;
+            height: 200%;
+            background: linear-gradient(to right,
+                    rgba(255, 255, 255, 0) 0%,
+                    rgba(255, 255, 255, 0.2) 50%,
+                    rgba(255, 255, 255, 0) 100%);
+            transform: rotate(30deg);
+            transition: all 0.8s;
+            pointer-events: none;
+        }
+
+        .shine-effect:hover::after {
+            left: 140%;
+        }
+
+        /* ===== محدد اللغة ===== */
+        .language-selector {
+            position: relative;
+            margin-left: 20px;
+        }
+
+        .language-selector .selected-language {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            color: var(--gold);
+            font-size: 0.95rem;
+            font-weight: 600;
+            padding: 8px 15px;
+            border: 1px solid rgba(212, 175, 55, 0.3);
+            border-radius: 30px;
+            cursor: pointer;
+            transition: var(--transition);
+        }
+
+        .language-selector .selected-language:hover {
+            background: rgba(212, 175, 55, 0.1);
+            border-color: var(--gold);
+        }
+
+        .language-selector .selected-language i {
+            font-size: 0.9rem;
+            transition: transform 0.3s ease;
+        }
+
+        .language-selector.active .selected-language i {
+            transform: rotate(180deg);
+        }
+
+        .language-dropdown {
+            position: absolute;
+            top: 100%;
+            left: 0;
+            width: 200px;
+            background: linear-gradient(145deg, var(--charcoal), var(--onyx));
+            border: 1px solid rgba(212, 175, 55, 0.3);
+            border-radius: 15px;
+            padding: 10px;
+            margin-top: 10px;
+            opacity: 0;
+            visibility: hidden;
+            transform: translateY(-10px);
+            transition: var(--transition);
+            z-index: 1000;
+            backdrop-filter: blur(10px);
+            box-shadow: var(--shadow);
+        }
+
+        .language-selector.active .language-dropdown {
+            opacity: 1;
+            visibility: visible;
+            transform: translateY(0);
+        }
+
+        .language-option {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            padding: 12px 15px;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: var(--transition);
+            color: var(--platinum);
+        }
+
+        .language-option:hover {
+            background: rgba(212, 175, 55, 0.15);
+            color: var(--gold);
+            transform: translateX(-5px);
+        }
+
+        .language-option.active {
+            background: rgba(212, 175, 55, 0.2);
+            color: var(--gold);
+            border-right: 3px solid var(--gold);
+        }
+
+        .language-option img {
+            width: 24px;
+            height: 24px;
+            border-radius: 4px;
+            object-fit: cover;
+        }
+
+        .language-option span {
+            font-size: 0.95rem;
+            font-weight: 500;
+        }
+
+        /* ===== الهيدر ===== */
+        header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 1000;
+            transition: var(--transition);
+            background: linear-gradient(180deg, rgba(15, 15, 15, 0.9) 0%, rgba(15, 15, 15, 0.7) 100%);
+            backdrop-filter: blur(8px);
+            border-bottom: 1px solid rgba(212, 175, 55, 0.2);
+        }
+
+        header.scrolled {
+            background: rgba(15, 15, 15, 0.98);
+            backdrop-filter: blur(15px);
+            box-shadow: var(--shadow);
+        }
+
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 0;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            z-index: 1001;
+        }
+
+        .logo-text {
+            font-size: 2rem;
+            font-weight: 800;
+            color: var(--ivory);
+            letter-spacing: 2px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+
+        .logo-text span {
+            background: linear-gradient(45deg, var(--gold), var(--platinum));
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+            font-weight: 900;
+        }
+
+        .header-actions {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        /* ===== القائمة ===== */
+        nav ul {
+            display: flex;
+            list-style: none;
+            gap: 30px;
+        }
+
+        nav ul li a {
+            color: var(--platinum);
+            text-decoration: none;
+            font-size: 0.95rem;
+            font-weight: 600;
+            padding: 8px 0;
+            position: relative;
+            transition: var(--transition);
+            display: flex;
+            align-items: center;
+            gap: 6px;
+        }
+
+        nav ul li a::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            width: 0;
+            height: 2px;
+            background: linear-gradient(90deg, var(--gold), var(--platinum));
+            transition: var(--transition);
+        }
+
+        nav ul li a:hover {
+            color: var(--gold);
+        }
+
+        nav ul li a:hover::after {
+            width: 100%;
+        }
+
+        .mobile-menu-btn {
+            display: none;
+            background: none;
+            border: none;
+            color: var(--gold);
+            font-size: 1.8rem;
+            cursor: pointer;
+            z-index: 1001;
+            width: 45px;
+            height: 45px;
+            border-radius: 50%;
+            background: rgba(212, 175, 55, 0.1);
+            transition: var(--transition);
+        }
+
+        .mobile-menu-btn:hover {
+            background: rgba(212, 175, 55, 0.2);
+            transform: rotate(90deg);
+        }
+
+        /* ===== الهيرو ===== */
+        .hero {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            position: relative;
+            overflow: hidden;
+            padding: 120px 0 80px;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(45deg,
+                    rgba(15, 15, 15, 0.9) 0%,
+                    rgba(44, 4, 28, 0.7) 50%,
+                    rgba(15, 15, 15, 0.9) 100%);
+            z-index: 1;
+        }
+
+        .hero-bg {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: url('https://images.unsplash.com/photo-1564501049418-3c27787d01e8?ixlib=rb-4.0.3&auto=format&fit=crop&w=1470&q=80');
+            background-size: cover;
+            background-position: center;
+            animation: kenburns 30s infinite alternate;
+            z-index: 0;
+        }
+
+        .hero-content {
+            max-width: 800px;
+            position: relative;
+            z-index: 2;
+        }
+
+        .hero-subtitle {
+            color: var(--gold);
+            font-size: 1.1rem;
+            letter-spacing: 3px;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .hero-subtitle::before,
+        .hero-subtitle::after {
+            content: '';
+            flex: 1;
+            height: 1px;
+            background: linear-gradient(90deg, transparent, var(--gold));
+        }
+
+        .hero-subtitle::after {
+            background: linear-gradient(90deg, var(--gold), transparent);
+        }
+
+        .hero-title {
+            font-size: 4rem;
+            font-weight: 900;
+            line-height: 1.1;
+            margin-bottom: 25px;
+            background: linear-gradient(45deg, var(--gold), var(--platinum), var(--gold));
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+            text-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+            position: relative;
+            padding-bottom: 15px;
+        }
+
+        .hero-title::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            width: 150px;
+            height: 3px;
+            background: linear-gradient(90deg, transparent, var(--gold));
+        }
+
+        .hero-description {
+            font-size: 1.1rem;
+            margin-bottom: 35px;
+            max-width: 600px;
+            color: var(--platinum);
+            line-height: 1.6;
+            border-right: 2px solid rgba(212, 175, 55, 0.3);
+            padding-right: 15px;
+        }
+
+        .hero-cta {
+            display: flex;
+            gap: 20px;
+            margin-top: 40px;
+        }
+
+        .book-btn {
+            background: linear-gradient(135deg, var(--gold), var(--gold-dark));
+            color: var(--onyx);
+            padding: 12px 30px;
+            border-radius: 30px;
+            text-decoration: none;
+            font-weight: 800;
+            font-size: 0.95rem;
+            transition: var(--transition);
+            box-shadow: 0 8px 25px rgba(212, 175, 55, 0.4);
+            border: none;
+            cursor: pointer;
+            position: relative;
+            overflow: hidden;
+            letter-spacing: 1px;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .book-btn::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg,
+                    transparent,
+                    rgba(255, 255, 255, 0.3),
+                    transparent);
+            transition: 0.6s;
+        }
+
+        .book-btn:hover::before {
+            left: 100%;
+        }
+
+        .book-btn:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 35px rgba(212, 175, 55, 0.6);
+        }
+
+        /* ===== الأرقام ===== */
+        .numbers {
+            padding: 80px 0;
+            background: linear-gradient(180deg,
+                    var(--charcoal) 0%,
+                    rgba(44, 4, 28, 0.3) 50%,
+                    var(--charcoal) 100%);
+            position: relative;
+        }
+
+        .numbers::before,
+        .numbers::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            width: 100%;
+            height: 1px;
+            background: linear-gradient(90deg, transparent, var(--gold), transparent);
+        }
+
+        .numbers::before {
+            top: 0;
+        }
+
+        .numbers::after {
+            bottom: 0;
+        }
+
+        .numbers-container {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 30px;
+        }
+
+        .number-item {
+            text-align: center;
+            padding: 40px 20px;
+            border-radius: 20px;
+            background: rgba(255, 255, 255, 0.03);
+            transition: var(--transition);
+            border: 1px solid rgba(212, 175, 55, 0.15);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .number-item::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 3px;
+            background: linear-gradient(90deg, var(--gold), transparent);
+            transform: translateX(-100%);
+            transition: var(--transition);
+        }
+
+        .number-item:hover::before {
+            transform: translateX(0);
+        }
+
+        .number-item:hover {
+            transform: translateY(-10px) scale(1.02);
+            background: rgba(212, 175, 55, 0.07);
+            border-color: rgba(212, 175, 55, 0.4);
+            box-shadow: var(--glow);
+        }
+
+        .number-item i {
+            font-size: 2.5rem;
+            background: linear-gradient(45deg, var(--gold), var(--platinum));
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+            margin-bottom: 20px;
+            transition: var(--transition);
+        }
+
+        .number-item:hover i {
+            transform: scale(1.2) rotate(10deg);
+        }
+
+        .number-value {
+            font-size: 3rem;
+            font-weight: 900;
+            background: linear-gradient(45deg, var(--gold), var(--platinum));
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+            margin-bottom: 10px;
+        }
+
+        /* ===== الغرف ===== */
+        .rooms {
+            padding: 120px 0;
+        }
+
+        .section-header {
+            text-align: center;
+            margin-bottom: 60px;
+        }
+
+        .section-subtitle {
+            color: var(--gold);
+            font-size: 1rem;
+            letter-spacing: 3px;
+            margin-bottom: 15px;
+            text-transform: uppercase;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 15px;
+        }
+
+        .section-subtitle::before,
+        .section-subtitle::after {
+            content: '';
+            width: 60px;
+            height: 1px;
+            background: linear-gradient(90deg, transparent, var(--gold));
+        }
+
+        .section-subtitle::after {
+            background: linear-gradient(90deg, var(--gold), transparent);
+        }
+
+        .section-title {
+            font-size: 3.2rem;
+            font-weight: 900;
+            margin-bottom: 20px;
+            color: var(--ivory);
+            position: relative;
+            padding-bottom: 15px;
+        }
+
+        .section-title::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            right: 50%;
+            transform: translateX(50%);
+            width: 120px;
+            height: 3px;
+            background: linear-gradient(90deg, transparent, var(--gold), transparent);
+        }
+
+        .section-title span {
+            background: linear-gradient(45deg, var(--gold), var(--platinum));
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+        }
+
+        .rooms-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 30px;
+            perspective: 2000px;
+        }
+
+        .room-card {
+            position: relative;
+            height: 450px;
+            border-radius: 25px;
+            overflow: hidden;
+            box-shadow: var(--shadow);
+            transition: all 0.6s cubic-bezier(0.23, 1, 0.32, 1);
+            cursor: pointer;
+            transform-style: preserve-3d;
+            border: 1px solid rgba(212, 175, 55, 0.2);
+        }
+
+        .room-card:hover {
+            transform: translateY(-15px) rotateX(5deg);
+            box-shadow: 0 30px 60px rgba(212, 175, 55, 0.3);
+            border-color: var(--gold);
+        }
+
+        .room-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(45deg,
+                    transparent 30%,
+                    rgba(212, 175, 55, 0.1) 50%,
+                    transparent 70%);
+            z-index: 2;
+            pointer-events: none;
+            opacity: 0;
+            transition: opacity 0.5s ease;
+        }
+
+        .room-card:hover::before {
+            opacity: 1;
+        }
+
+        .room-image {
+            height: 100%;
+            width: 100%;
+            background-size: cover;
+            background-position: center;
+            transition: transform 1.2s cubic-bezier(0.23, 1, 0.32, 1);
+        }
+
+        .room-card:hover .room-image {
+            transform: scale(1.1) translateY(-10px);
+        }
+
+        .room-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(to top,
+                    rgba(0, 0, 0, 0.95) 0%,
+                    rgba(212, 175, 55, 0.2) 50%,
+                    transparent 100%);
+            display: flex;
+            align-items: flex-end;
+            padding: 30px;
+            z-index: 3;
+            opacity: 0;
+            transition: opacity 0.5s ease;
+        }
+
+        .room-card:hover .room-overlay {
+            opacity: 1;
+        }
+
+        .room-price {
+            background: linear-gradient(135deg, var(--gold), var(--gold-dark));
+            color: var(--onyx);
+            padding: 12px 25px;
+            border-radius: 40px;
+            font-weight: 900;
+            font-size: 1.4rem;
+            box-shadow: 0 10px 30px rgba(212, 175, 55, 0.5);
+            transform: translateY(80px);
+            transition: transform 0.6s cubic-bezier(0.23, 1, 0.32, 1) 0.1s;
+            border: 2px solid var(--gold-light);
+        }
+
+        .room-card:hover .room-price {
+            transform: translateY(0);
+        }
+
+        .room-content {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            background: linear-gradient(to top,
+                    rgba(15, 15, 15, 0.98) 0%,
+                    rgba(44, 4, 28, 0.9) 100%);
+            padding: 25px;
+            z-index: 4;
+            transform: translateY(100%);
+            transition: transform 0.6s cubic-bezier(0.23, 1, 0.32, 1);
+            backdrop-filter: blur(10px);
+            border-top: 2px solid rgba(212, 175, 55, 0.3);
+        }
+
+        .room-card:hover .room-content {
+            transform: translateY(0);
+        }
+
+        .room-title {
+            font-size: 1.5rem;
+            margin-bottom: 15px;
+            color: var(--gold);
+            position: relative;
+            padding-bottom: 12px;
+            text-align: center;
+        }
+
+        .room-title::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            right: 50%;
+            transform: translateX(50%);
+            width: 60px;
+            height: 2px;
+            background: linear-gradient(90deg, transparent, var(--gold), transparent);
+        }
+
+        .room-features {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 10px;
+        }
+
+        .room-feature {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            color: var(--platinum);
+            padding: 5px 10px;
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 12px;
+            border: 1px solid rgba(212, 175, 55, 0.2);
+            transition: var(--transition);
+            font-size: 0.8rem;
+        }
+
+        .room-feature:hover {
+            background: rgba(212, 175, 55, 0.15);
+            transform: translateX(-5px);
+            border-color: var(--gold);
+        }
+
+        .room-feature i {
+            color: var(--gold);
+            font-size: 0.9rem;
+        }
+
+        /* ===== المرافق ===== */
+        .facilities {
+            padding: 120px 0;
+            background: linear-gradient(180deg,
+                    rgba(44, 4, 28, 0.5) 0%,
+                    var(--charcoal) 100%);
+        }
+
+        .facilities-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 30px;
+        }
+
+        .facility-card {
+            background: linear-gradient(145deg,
+                    rgba(255, 255, 255, 0.05) 0%,
+                    rgba(212, 175, 55, 0.05) 100%);
+            border-radius: 25px;
+            padding: 40px 25px;
+            text-align: center;
+            transition: var(--transition);
+            border: 1px solid rgba(212, 175, 55, 0.15);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .facility-card::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: linear-gradient(45deg,
+                    transparent 30%,
+                    rgba(212, 175, 55, 0.05) 50%,
+                    transparent 70%);
+            transform: rotate(45deg);
+            transition: all 0.8s;
+        }
+
+        .facility-card:hover::before {
+            left: 150%;
+        }
+
+        .facility-card:hover {
+            background: linear-gradient(145deg,
+                    rgba(212, 175, 55, 0.1) 0%,
+                    rgba(255, 255, 255, 0.1) 100%);
+            transform: translateY(-12px) scale(1.02);
+            border-color: rgba(212, 175, 55, 0.4);
+            box-shadow: var(--glow);
+        }
+
+        .facility-icon {
+            width: 80px;
+            height: 80px;
+            background: linear-gradient(135deg, var(--gold), var(--gold-dark));
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 25px;
+            font-size: 2rem;
+            color: var(--onyx);
+            box-shadow: var(--glow);
+            position: relative;
+            transition: var(--transition);
+        }
+
+        .facility-card:hover .facility-icon {
+            transform: rotateY(360deg) scale(1.1);
+        }
+
+        .facility-icon::after {
+            content: '';
+            position: absolute;
+            top: -5px;
+            left: -5px;
+            right: -5px;
+            bottom: -5px;
+            background: linear-gradient(45deg, var(--gold), transparent);
+            border-radius: 50%;
+            z-index: -1;
+            opacity: 0;
+            transition: var(--transition);
+        }
+
+        .facility-card:hover .facility-icon::after {
+            opacity: 1;
+        }
+
+        .facility-title {
+            font-size: 1.4rem;
+            margin-bottom: 15px;
+            color: var(--ivory);
+            position: relative;
+            padding-bottom: 12px;
+        }
+
+        .facility-title::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            right: 50%;
+            transform: translateX(50%);
+            width: 50px;
+            height: 2px;
+            background: var(--gold);
+        }
+
+        /* ===== نموذج الحجز ===== */
+        .booking {
+            padding: 120px 0;
+            background: linear-gradient(180deg,
+                    var(--charcoal) 0%,
+                    rgba(44, 4, 28, 0.3) 100%);
+        }
+
+        .booking-container {
+            display: grid;
+            grid-template-columns: 1fr 1.2fr;
+            gap: 60px;
+            align-items: center;
+        }
+
+        .booking-form-container {
+            background: linear-gradient(145deg,
+                    rgba(30, 30, 30, 0.95) 0%,
+                    rgba(44, 4, 28, 0.3) 100%);
+            border-radius: 30px;
+            padding: 50px;
+            box-shadow: var(--shadow);
+            border: 1px solid rgba(212, 175, 55, 0.2);
+            backdrop-filter: blur(10px);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .booking-form-container::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 3px;
+            background: linear-gradient(90deg, var(--gold), transparent);
+            transform: translateX(-100%);
+            transition: var(--transition);
+        }
+
+        .booking-form-container:hover::before {
+            transform: translateX(0);
+        }
+
+        .form-title {
+            font-size: 2rem;
+            margin-bottom: 30px;
+            color: var(--ivory);
+            position: relative;
+            padding-bottom: 15px;
+        }
+
+        .form-title::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            width: 120px;
+            height: 3px;
+            background: linear-gradient(90deg, var(--gold), transparent);
+        }
+
+        .form-title span {
+            background: linear-gradient(45deg, var(--gold), var(--platinum));
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+        }
+
+        .booking-form {
+            display: grid;
+            gap: 20px;
+        }
+
+        .form-row {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 8px;
+            color: var(--gold-light);
+            font-weight: 600;
+            font-size: 0.9rem;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .form-group label i {
+            color: var(--gold);
+            font-size: 1rem;
+        }
+
+        .form-control {
+            width: 100%;
+            padding: 15px 20px;
+            background: rgba(255, 255, 255, 0.07);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 12px;
+            color: var(--ivory);
+            font-size: 0.95rem;
+            transition: var(--transition);
+        }
+
+        .form-control:focus {
+            outline: none;
+            border-color: var(--gold);
+            box-shadow: 0 0 0 3px rgba(212, 175, 55, 0.3);
+            background: rgba(255, 255, 255, 0.1);
+        }
+
+        select.form-control {
+            appearance: none;
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%23D4AF37'%3e%3cpath d='M7 10l5 5 5-5z'/%3e%3c/svg%3e");
+            background-repeat: no-repeat;
+            background-position: left 20px center;
+            background-size: 16px;
+            padding-left: 45px;
+            cursor: pointer;
+        }
+
+        .form-submit {
+            background: linear-gradient(135deg, var(--gold), var(--gold-dark));
+            color: var(--onyx);
+            padding: 18px;
+            border-radius: 12px;
+            border: none;
+            font-weight: 800;
+            font-size: 1.1rem;
+            cursor: pointer;
+            transition: var(--transition);
+            margin-top: 10px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .form-submit::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg,
+                    transparent,
+                    rgba(255, 255, 255, 0.3),
+                    transparent);
+            transition: 0.6s;
+        }
+
+        .form-submit:hover::before {
+            left: 100%;
+        }
+
+        .form-submit:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 35px rgba(212, 175, 55, 0.5);
+        }
+
+        /* ===== الفوتر ===== */
+        footer {
+            background: linear-gradient(180deg,
+                    var(--charcoal) 0%,
+                    var(--onyx) 100%);
+            padding: 80px 0 40px;
+            border-top: 1px solid rgba(212, 175, 55, 0.2);
+        }
+
+        .footer-content {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 40px;
+            margin-bottom: 60px;
+        }
+
+        .footer-column h3 {
+            font-size: 1.4rem;
+            margin-bottom: 25px;
+            color: var(--ivory);
+            position: relative;
+            padding-bottom: 15px;
+        }
+
+        .footer-column h3::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            width: 50px;
+            height: 2px;
+            background: linear-gradient(90deg, var(--gold), transparent);
+        }
+
+        .footer-column h3 span {
+            background: linear-gradient(45deg, var(--gold), var(--platinum));
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+        }
+
+        .footer-logo {
+            font-size: 2.2rem;
+            font-weight: 900;
+            color: var(--ivory);
+            margin-bottom: 20px;
+            letter-spacing: 2px;
+        }
+
+        .footer-logo span {
+            background: linear-gradient(45deg, var(--gold), var(--platinum));
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+        }
+
+        .footer-links {
+            list-style: none;
+        }
+
+        .footer-links li {
+            margin-bottom: 12px;
+        }
+
+        .footer-links a {
+            color: var(--platinum);
+            text-decoration: none;
+            transition: var(--transition);
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .footer-links a:hover {
+            color: var(--gold);
+            transform: translateX(10px);
+        }
+
+        .social-links {
+            display: flex;
+            gap: 15px;
+            margin-top: 25px;
+        }
+
+        .social-link {
+            width: 40px;
+            height: 40px;
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--gold);
+            font-size: 1.2rem;
+            transition: var(--transition);
+            text-decoration: none;
+            border: 1px solid rgba(212, 175, 55, 0.2);
+        }
+
+        .social-link:hover {
+            background: var(--gold);
+            color: var(--onyx);
+            transform: translateY(-5px) rotate(10deg);
+            box-shadow: 0 10px 25px rgba(212, 175, 55, 0.4);
+        }
+
+        /* ===== تحسينات Responsive ===== */
+        @media (max-width: 1280px) {
+            .container {
+                max-width: 1100px;
+            }
+
+            .hero-title {
+                font-size: 3.5rem;
+            }
+
+            .rooms-grid {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 25px;
+            }
+
+            .facilities-grid {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 25px;
+            }
+
+            .footer-content {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 30px;
+            }
+        }
+
+        @media (max-width: 1024px) {
+            .container {
+                padding: 0 25px;
+            }
+
+            .hero-title {
+                font-size: 3rem;
+            }
+
+            .numbers-container {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 20px;
+            }
+
+            .booking-container {
+                grid-template-columns: 1fr;
+                gap: 40px;
+            }
+
+            .booking-form-container {
+                padding: 40px;
+            }
+
+            nav ul {
+                gap: 20px;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                padding: 0 20px;
+            }
+
+            .header-content {
+                padding: 12px 0;
+            }
+
+            .logo-text {
+                font-size: 1.6rem;
+            }
+
+            nav {
+                display: none;
+            }
+
+            .mobile-menu-btn {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+
+            #mainNav.active {
+                display: block;
+                position: fixed;
+                top: 0;
+                right: 0;
+                width: 100%;
+                height: 100vh;
+                background: rgba(15, 15, 15, 0.98);
+                backdrop-filter: blur(20px);
+                z-index: 1000;
+                padding: 100px 30px 30px;
+            }
+
+            #mainNav.active ul {
+                flex-direction: column;
+                gap: 20px;
+            }
+
+            #mainNav.active ul li a {
+                font-size: 1.2rem;
+                padding: 15px;
+                background: rgba(255, 255, 255, 0.05);
+                border-radius: 12px;
+                justify-content: center;
+            }
+
+            .hero {
+                padding: 100px 0 60px;
+                text-align: center;
+            }
+
+            .hero-subtitle {
+                justify-content: center;
+            }
+
+            .hero-title {
+                font-size: 2.5rem;
+            }
+
+            .hero-title::after {
+                right: 50%;
+                transform: translateX(50%);
+            }
+
+            .hero-description {
+                border-right: none;
+                padding-right: 0;
+                border-bottom: 2px solid rgba(212, 175, 55, 0.3);
+                padding-bottom: 15px;
+                margin: 0 auto 30px;
+            }
+
+            .hero-cta {
+                flex-direction: column;
+                align-items: stretch;
+                gap: 15px;
+            }
+
+            .hero-cta a {
+                width: 100%;
+                text-align: center;
+            }
+
+            .rooms {
+                padding: 80px 0;
+            }
+
+            .section-title {
+                font-size: 2.5rem;
+            }
+
+            .rooms-grid {
+                grid-template-columns: 1fr;
+                gap: 20px;
+            }
+
+            .room-card {
+                max-width: 450px;
+                margin: 0 auto;
+                width: 100%;
+            }
+
+            .facilities {
+                padding: 80px 0;
+            }
+
+            .facilities-grid {
+                grid-template-columns: 1fr;
+                gap: 20px;
+            }
+
+            .facility-card {
+                max-width: 400px;
+                margin: 0 auto;
+                width: 100%;
+            }
+
+            .booking {
+                padding: 80px 0;
+            }
+
+            .booking-form-container {
+                padding: 30px 20px;
+            }
+
+            .form-row {
+                grid-template-columns: 1fr;
+                gap: 15px;
+            }
+
+            footer {
+                padding: 60px 0 30px;
+            }
+
+            .footer-content {
+                grid-template-columns: 1fr;
+                gap: 40px;
+                text-align: center;
+            }
+
+            .footer-column h3::after {
+                right: 50%;
+                transform: translateX(50%);
+            }
+
+            .footer-links a {
+                justify-content: center;
+            }
+
+            .social-links {
+                justify-content: center;
+            }
+
+            .language-selector {
+                margin-left: 0;
+            }
+
+            .language-selector .selected-language span {
+                display: none;
+            }
+
+            .language-selector .selected-language {
+                padding: 8px 10px;
+            }
+
+            .language-dropdown {
+                left: auto;
+                right: 0;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .container {
+                padding: 0 15px;
+            }
+
+            .logo-text {
+                font-size: 1.4rem;
+            }
+
+            .hero-title {
+                font-size: 2rem;
+            }
+
+            .numbers-container {
+                grid-template-columns: 1fr;
+            }
+
+            .section-title {
+                font-size: 2rem;
+            }
+
+            .room-card {
+                height: 400px;
+            }
+        }
+
+        @media (hover: none) and (pointer: coarse) {
+
+            .room-card:hover,
+            .facility-card:hover,
+            .number-item:hover,
+            .book-btn:hover,
+            .social-link:hover {
+                transform: none !important;
+            }
+
+            .room-card:active,
+            .facility-card:active,
+            .number-item:active {
+                transform: scale(0.98) !important;
+            }
+
+            .room-card:hover .room-content {
+                transform: translateY(100%);
+            }
+
+            .room-card:active .room-content,
+            .room-card.active .room-content {
+                transform: translateY(0);
+            }
+        }
+
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+
+        ::-webkit-scrollbar-track {
+            background: var(--charcoal);
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: linear-gradient(var(--gold), var(--gold-dark));
+            border-radius: 4px;
+        }
+
+        .fade-in {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: opacity 0.8s ease, transform 0.8s ease;
+        }
+
+        .fade-in.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    </style>
+</head>
+
+<body lang="ar" dir="rtl">
+    <!-- الخلفيات -->
+    <div class="bg-pattern"></div>
+    <div class="bg-overlay"></div>
+
+    <!-- الهيدر -->
+    <header id="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <div class="logo-text luxury-font" data-i18n="logo">LUXURY<span>HOTEL</span></div>
+                </div>
+
+                <div class="header-actions">
+                    <!-- محدد اللغة -->
+                    <div class="language-selector" id="languageSelector">
+                        <div class="selected-language">
+                            <i class="fas fa-globe"></i>
+                            <span>العربية</span>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="language-dropdown">
+                            <div class="language-option active" data-lang="ar">
+                                <img src="https://flagcdn.com/w40/ae.png" alt="العربية">
+                                <span>العربية</span>
+                            </div>
+                            <div class="language-option" data-lang="en">
+                                <img src="https://flagcdn.com/w40/gb.png" alt="English">
+                                <span>English</span>
+                            </div>
+                            <div class="language-option" data-lang="zh">
+                                <img src="https://flagcdn.com/w40/cn.png" alt="中文">
+                                <span>中文</span>
+                            </div>
+                            <div class="language-option" data-lang="hi">
+                                <img src="https://flagcdn.com/w40/in.png" alt="हिन्दी">
+                                <span>हिन्दी</span>
+                            </div>
+                            <div class="language-option" data-lang="es">
+                                <img src="https://flagcdn.com/w40/es.png" alt="Español">
+                                <span>Español</span>
+                            </div>
+                            <div class="language-option" data-lang="fr">
+                                <img src="https://flagcdn.com/w40/fr.png" alt="Français">
+                                <span>Français</span>
+                            </div>
+                            <div class="language-option" data-lang="ru">
+                                <img src="https://flagcdn.com/w40/ru.png" alt="Русский">
+                                <span>Русский</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="فتح القائمة">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                </div>
+
+                <nav id="mainNav">
+                    <ul>
+                        <li><a href="#home" data-i18n="nav.home">الرئيسية</a></li>
+                        <li><a href="#rooms" data-i18n="nav.rooms">الأجنحة</a></li>
+                        <li><a href="#facilities" data-i18n="nav.facilities">مرافق</a></li>
+                        <li><a href="#booking" data-i18n="nav.booking">حجز</a></li>
+                        <li><a href="#contact" data-i18n="nav.contact">اتصل بنا</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- الهيرو -->
+    <section class="hero" id="home">
+        <div class="hero-bg kenburns"></div>
+        <div class="container">
+            <div class="hero-content fade-in">
+                <h3 class="hero-subtitle luxury-font royal-font"><i class="fas fa-gem"></i> <span
+                        data-i18n="hero.subtitle">الفخامة المطلقة</span></h3>
+                <h1 class="hero-title luxury-font royal-font" data-i18n="hero.title">إقامة الملكية في عالم لوکسوري</h1>
+                <p class="hero-description royal-font" data-i18n="hero.description">فندق لوکسوري ليس مجرد مكان للإقامة،
+                    بل هو عالم من الفخامة المطلقة حيث يصبح كل ضيف ملكاً. في قلب دبي، نقدم تجربة إقامة تتجاوز التوقعات
+                    وتعيد تعريف مفهوم الرفاهية.</p>
+                <div class="hero-cta">
+                    <a href="#rooms" class="book-btn shine-effect" data-i18n="hero.cta"><i class="fas fa-eye"></i> اكتشف
+                        الأجنحة الملكية</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- الأرقام -->
+    <section class="numbers">
+        <div class="container">
+            <div class="numbers-container">
+                <div class="number-item floating">
+                    <i class="fas fa-crown"></i>
+                    <div class="number-value gold-text">15+</div>
+                    <div class="number-label" data-i18n="numbers.suites">جناح ملكي حصري</div>
+                </div>
+                <div class="number-item floating" style="animation-delay: 0.5s;">
+                    <i class="fas fa-star"></i>
+                    <div class="number-value gold-text">5</div>
+                    <div class="number-label" data-i18n="numbers.restaurants">مطاعم حائزة على نجوم</div>
+                </div>
+                <div class="number-item floating" style="animation-delay: 1s;">
+                    <i class="fas fa-award"></i>
+                    <div class="number-value gold-text">32</div>
+                    <div class="number-label" data-i18n="numbers.awards">جائزة عالمية للتميز</div>
+                </div>
+                <div class="number-item floating" style="animation-delay: 1.5s;">
+                    <i class="fas fa-user-tie"></i>
+                    <div class="number-value gold-text">1:1</div>
+                    <div class="number-label" data-i18n="numbers.staff">نسبة موظفين لكل ضيف</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- الغرف -->
+    <section class="rooms" id="rooms">
+        <div class="container">
+            <div class="section-header">
+                <h3 class="section-subtitle luxury-font royal-font"><i class="fas fa-gem"></i> <span
+                        data-i18n="rooms.subtitle">عالم الأجنحة الملكية</span></h3>
+                <h2 class="section-title luxury-font royal-font"><span data-i18n="rooms.title.part1">الأجنحة</span>
+                    <span data-i18n="rooms.title.part2">الملكية</span>
+                </h2>
+                <p class="section-description royal-font" data-i18n="rooms.description">كل جناح في لوکسوري هو تحفة فنية
+                    مستقلة، مصممة بتوقيع كبار مصممي الديكور العالميين، مزودة بتقنيات ذكية متطورة وتطل على أروع المناظر
+                    البانورامية.</p>
+            </div>
+            <div class="rooms-grid">
+                <!-- 1. الجناح الرئاسي -->
+                <div class="room-card shine-effect fade-in">
+                    <div class="room-image"
+                        style="background-image: url('https://images.unsplash.com/photo-1582719508461-905c673771fd?ixlib=rb-4.0.3&auto=format&fit=crop&w=1470&q=80');">
+                    </div>
+                    <div class="room-overlay">
+                        <div class="room-price pulse-glow">$5,000 / <span data-i18n="rooms.perNight">ليلة</span></div>
+                    </div>
+                    <div class="room-content">
+                        <h3 class="room-title luxury-font royal-font" data-i18n="rooms.presidential.title">الجناح
+                            الرئاسي</h3>
+                        <div class="room-features">
+                            <div class="room-feature"><i class="fas fa-crown"></i> <span
+                                    data-i18n="rooms.presidential.features.area">1200 م²</span></div>
+                            <div class="room-feature"><i class="fas fa-swimming-pool"></i> <span
+                                    data-i18n="rooms.presidential.features.pool">مسبح داخلي</span></div>
+                            <div class="room-feature"><i class="fas fa-theater-masks"></i> <span
+                                    data-i18n="rooms.presidential.features.theater">مسرح خاص</span></div>
+                            <div class="room-feature"><i class="fas fa-wine-bottle"></i> <span
+                                    data-i18n="rooms.presidential.features.wine">قبو نبيذ</span></div>
+                        </div>
+                        <p class="room-description royal-font" data-i18n="rooms.presidential.description">تحفة معمارية
+                            بمساحة 1200 متر مربع، مع إطلالة 360 درجة على دبي.</p>
+                    </div>
+                </div>
+
+                <!-- 2. الجناح الكلاسيكي -->
+                <div class="room-card shine-effect fade-in">
+                    <div class="room-image"
+                        style="background-image: url('https://images.unsplash.com/photo-1611892440504-42a792e24d32?ixlib=rb-4.0.3&auto=format&fit=crop&w=1470&q=80');">
+                    </div>
+                    <div class="room-overlay">
+                        <div class="room-price pulse-glow">$3,500 / <span data-i18n="rooms.perNight">ليلة</span></div>
+                    </div>
+                    <div class="room-content">
+                        <h3 class="room-title luxury-font royal-font" data-i18n="rooms.classic.title">الجناح الكلاسيكي
+                        </h3>
+                        <div class="room-features">
+                            <div class="room-feature"><i class="fas fa-gem"></i> <span
+                                    data-i18n="rooms.classic.features.area">800 م²</span></div>
+                            <div class="room-feature"><i class="fas fa-car"></i> <span
+                                    data-i18n="rooms.classic.features.garage">جراج خاص</span></div>
+                            <div class="room-feature"><i class="fas fa-wind"></i> <span
+                                    data-i18n="rooms.classic.features.air">هواء نقي</span></div>
+                            <div class="room-feature"><i class="fas fa-infinity"></i> <span
+                                    data-i18n="rooms.classic.features.pool">مسبح لانهائي</span></div>
+                        </div>
+                        <p class="room-description royal-font" data-i18n="rooms.classic.description">تصميم فريد يجمع بين
+                            الذهب والعنبر الأسود مع جاكوزي بمياه معدنية.</p>
+                    </div>
+                </div>
+
+                <!-- 3. جناح الكورنيش -->
+                <div class="room-card shine-effect fade-in">
+                    <div class="room-image"
+                        style="background-image: url('https://images.unsplash.com/photo-1560185007-cde436f6a4d0?ixlib=rb-4.0.3&auto=format&fit=crop&w=1470&q=80');">
+                    </div>
+                    <div class="room-overlay">
+                        <div class="room-price pulse-glow">$4,200 / <span data-i18n="rooms.perNight">ليلة</span></div>
+                    </div>
+                    <div class="room-content">
+                        <h3 class="room-title luxury-font royal-font" data-i18n="rooms.corniche.title">جناح الكورنيش
+                        </h3>
+                        <div class="room-features">
+                            <div class="room-feature"><i class="fas fa-water"></i> <span
+                                    data-i18n="rooms.corniche.features.waterfall">شلال داخلي</span></div>
+                            <div class="room-feature"><i class="fas fa-fish"></i> <span
+                                    data-i18n="rooms.corniche.features.aquarium">حوض أسماك</span></div>
+                            <div class="room-feature"><i class="fas fa-spa"></i> <span
+                                    data-i18n="rooms.corniche.features.spa">سبا خاص</span></div>
+                            <div class="room-feature"><i class="fas fa-chess-board"></i> <span
+                                    data-i18n="rooms.corniche.features.games">ألعاب ذكية</span></div>
+                        </div>
+                        <p class="room-description royal-font" data-i18n="rooms.corniche.description">تصميم بحري فاخر مع
+                            ألوان الياقوت الأزرق وعلاجات بحرية.</p>
+                    </div>
+                </div>
+
+                <!-- 4. جناح الواحة -->
+                <div class="room-card shine-effect fade-in">
+                    <div class="room-image"
+                        style="background-image: url('https://images.unsplash.com/photo-1584622650111-993a426fbf0a?ixlib=rb-4.0.3&auto=format&fit=crop&w=1470&q=80');">
+                    </div>
+                    <div class="room-overlay">
+                        <div class="room-price pulse-glow">$3,800 / <span data-i18n="rooms.perNight">ليلة</span></div>
+                    </div>
+                    <div class="room-content">
+                        <h3 class="room-title luxury-font royal-font" data-i18n="rooms.oasis.title">جناح الواحة</h3>
+                        <div class="room-features">
+                            <div class="room-feature"><i class="fas fa-leaf"></i> <span
+                                    data-i18n="rooms.oasis.features.garden">حديقة داخلية</span></div>
+                            <div class="room-feature"><i class="fas fa-tree"></i> <span
+                                    data-i18n="rooms.oasis.features.palms">أشجار نخيل</span></div>
+                            <div class="room-feature"><i class="fas fa-dove"></i> <span
+                                    data-i18n="rooms.oasis.features.birds">طيور زينة</span></div>
+                            <div class="room-feature"><i class="fas fa-umbrella-beach"></i> <span
+                                    data-i18n="rooms.oasis.features.beach">شاطئ خاص</span></div>
+                        </div>
+                        <p class="room-description royal-font" data-i18n="rooms.oasis.description">جناح صديق للبيئة يجمع
+                            بين الفخامة والطبيعة الخلابة.</p>
+                    </div>
+                </div>
+
+                <!-- 5. الجناح كريستال -->
+                <div class="room-card shine-effect fade-in">
+                    <div class="room-image"
+                        style="background-image: url('https://images.unsplash.com/photo-1540518614846-7eded433c457?ixlib=rb-4.0.3&auto=format&fit=crop&w=1470&q=80');">
+                    </div>
+                    <div class="room-overlay">
+                        <div class="room-price pulse-glow">$4,500 / <span data-i18n="rooms.perNight">ليلة</span></div>
+                    </div>
+                    <div class="room-content">
+                        <h3 class="room-title luxury-font royal-font" data-i18n="rooms.crystal.title">الجناح كريستال
+                        </h3>
+                        <div class="room-features">
+                            <div class="room-feature"><i class="fas fa-snowflake"></i> <span
+                                    data-i18n="rooms.crystal.features.walls">جدران كريستال</span></div>
+                            <div class="room-feature"><i class="fas fa-icicles"></i> <span
+                                    data-i18n="rooms.crystal.features.chandeliers">ثريات ماسية</span></div>
+                            <div class="room-feature"><i class="fas fa-wind"></i> <span
+                                    data-i18n="rooms.crystal.features.cooling">تبريد ذكي</span></div>
+                            <div class="room-feature"><i class="fas fa-ice-cream"></i> <span
+                                    data-i18n="rooms.crystal.features.icebar">بار مثلجات</span></div>
+                        </div>
+                        <p class="room-description royal-font" data-i18n="rooms.crystal.description">تصميم كريستالي نقي
+                            مع ثريات مصنوعة من الماس الحقيقي.</p>
+                    </div>
+                </div>
+
+                <!-- 6. جناح رويال -->
+                <div class="room-card shine-effect fade-in">
+                    <div class="room-image"
+                        style="background-image: url('https://images.unsplash.com/photo-1578683010236-d716f9a3f461?ixlib=rb-4.0.3&auto=format&fit=crop&w=1470&q=80');">
+                    </div>
+                    <div class="room-overlay">
+                        <div class="room-price pulse-glow">$3,200 / <span data-i18n="rooms.perNight">ليلة</span></div>
+                    </div>
+                    <div class="room-content">
+                        <h3 class="room-title luxury-font royal-font" data-i18n="rooms.royal.title">جناح رويال</h3>
+                        <div class="room-features">
+                            <div class="room-feature"><i class="fas fa-fire"></i> <span
+                                    data-i18n="rooms.royal.features.fireplace">مدفئة حجرية</span></div>
+                            <div class="room-feature"><i class="fas fa-couch"></i> <span
+                                    data-i18n="rooms.royal.features.furniture">أثاث كلاسيكي</span></div>
+                            <div class="room-feature"><i class="fas fa-book"></i> <span
+                                    data-i18n="rooms.royal.features.library">مكتبة نادرة</span></div>
+                            <div class="room-feature"><i class="fas fa-wine-glass-alt"></i> <span
+                                    data-i18n="rooms.royal.features.bar">بار تقليدي</span></div>
+                        </div>
+                        <p class="room-description royal-font" data-i18n="rooms.royal.description">تصميم كلاسيكي فاخر مع
+                            أثاث من خشب الماهوجني النادر.</p>
+                    </div>
+                </div>
+
+                <!-- 7. الجناح القمر -->
+                <div class="room-card shine-effect fade-in">
+                    <div class="room-image"
+                        style="background-image: url('https://images.unsplash.com/photo-1613977257363-707ba9348227?ixlib=rb-4.0.3&auto=format&fit=crop&w=1470&q=80');">
+                    </div>
+                    <div class="room-overlay">
+                        <div class="room-price pulse-glow">$4,000 / <span data-i18n="rooms.perNight">ليلة</span></div>
+                    </div>
+                    <div class="room-content">
+                        <h3 class="room-title luxury-font royal-font" data-i18n="rooms.moon.title">الجناح القمر</h3>
+                        <div class="room-features">
+                            <div class="room-feature"><i class="fas fa-moon"></i> <span
+                                    data-i18n="rooms.moon.features.lighting">إضاءة قمرية</span></div>
+                            <div class="room-feature"><i class="fas fa-star"></i> <span
+                                    data-i18n="rooms.moon.features.ceiling">سقف نجمي</span></div>
+                            <div class="room-feature"><i class="fas fa-cloud-moon"></i> <span
+                                    data-i18n="rooms.moon.features.cloud">غرفة سحابية</span></div>
+                            <div class="room-feature"><i class="fas fa-music"></i> <span
+                                    data-i18n="rooms.moon.features.sound">صوت سماوي</span></div>
+                        </div>
+                        <p class="room-description royal-font" data-i18n="rooms.moon.description">تصميم سماوي فريد مع
+                            سقف نجمي متحرك وإضاءة قمرية.</p>
+                    </div>
+                </div>
+
+                <!-- 8. جناح رومانسي -->
+                <div class="room-card shine-effect fade-in">
+                    <div class="room-image"
+                        style="background-image: url('https://images.unsplash.com/photo-1512918728675-ed5a9ecdebfd?ixlib=rb-4.0.3&auto=format&fit=crop&w=1470&q=80');">
+                    </div>
+                    <div class="room-overlay">
+                        <div class="room-price pulse-glow">$3,900 / <span data-i18n="rooms.perNight">ليلة</span></div>
+                    </div>
+                    <div class="room-content">
+                        <h3 class="room-title luxury-font royal-font" data-i18n="rooms.romantic.title">جناح رومانسي</h3>
+                        <div class="room-features">
+                            <div class="room-feature"><i class="fas fa-heart"></i> <span
+                                    data-i18n="rooms.romantic.features.design">تصميم رومانسي</span></div>
+                            <div class="room-feature"><i class="fas fa-rose"></i> <span
+                                    data-i18n="rooms.romantic.features.garden">حديقة ورود</span></div>
+                            <div class="room-feature"><i class="fas fa-champagne-glasses"></i> <span
+                                    data-i18n="rooms.romantic.features.champagne">شمبانيا</span></div>
+                            <div class="room-feature"><i class="fas fa-ring"></i> <span
+                                    data-i18n="rooms.romantic.features.wedding">غرفة خاطبة</span></div>
+                        </div>
+                        <p class="room-description royal-font" data-i18n="rooms.romantic.description">جناح مخصص للأزواج
+                            مع حديقة ورود داخلية وشامبانيا حصرية.</p>
+                    </div>
+                </div>
+
+                <!-- 9. جناح اللاجون -->
+                <div class="room-card shine-effect fade-in">
+                    <div class="room-image"
+                        style="background-image: url('https://images.unsplash.com/photo-1566665797739-1674de7a421a?ixlib=rb-4.0.3&auto=format&fit=crop&w=1470&q=80');">
+                    </div>
+                    <div class="room-overlay">
+                        <div class="room-price pulse-glow">$3,600 / <span data-i18n="rooms.perNight">ليلة</span></div>
+                    </div>
+                    <div class="room-content">
+                        <h3 class="room-title luxury-font royal-font" data-i18n="rooms.lagoon.title">جناح اللاجون</h3>
+                        <div class="room-features">
+                            <div class="room-feature"><i class="fas fa-water-ladder"></i> <span
+                                    data-i18n="rooms.lagoon.features.waterfall">شلال مائي</span></div>
+                            <div class="room-feature"><i class="fas fa-hot-tub"></i> <span
+                                    data-i18n="rooms.lagoon.features.jacuzzi">جاكوزي فيروزي</span></div>
+                            <div class="room-feature"><i class="fas fa-umbrella-beach"></i> <span
+                                    data-i18n="rooms.lagoon.features.beach">شاطئ داخلي</span></div>
+                            <div class="room-feature"><i class="fas fa-anchor"></i> <span
+                                    data-i18n="rooms.lagoon.features.marine">تصميم بحري</span></div>
+                        </div>
+                        <p class="room-description royal-font" data-i18n="rooms.lagoon.description">تصميم بحري فيروزي
+                            مستوحى من أجمل البحار الاستوائية.</p>
+                    </div>
+                </div>
+
+                <!-- 10. جناح الإمبراطور -->
+                <div class="room-card shine-effect fade-in">
+                    <div class="room-image"
+                        style="background-image: url('https://images.unsplash.com/photo-1631049307264-da0ec9d70304?ixlib=rb-4.0.3&auto=format&fit=crop&w=1470&q=80');">
+                    </div>
+                    <div class="room-overlay">
+                        <div class="room-price pulse-glow">$6,000 / <span data-i18n="rooms.perNight">ليلة</span></div>
+                    </div>
+                    <div class="room-content">
+                        <h3 class="room-title luxury-font royal-font" data-i18n="rooms.emperor.title">جناح الإمبراطور
+                        </h3>
+                        <div class="room-features">
+                            <div class="room-feature"><i class="fas fa-crown"></i> <span
+                                    data-i18n="rooms.emperor.features.area">1500 م²</span></div>
+                            <div class="room-feature"><i class="fas fa-golf-ball-tee"></i> <span
+                                    data-i18n="rooms.emperor.features.golf">ملعب جولف</span></div>
+                            <div class="room-feature"><i class="fas fa-casino"></i> <span
+                                    data-i18n="rooms.emperor.features.casino">كازينو خاص</span></div>
+                            <div class="room-feature"><i class="fas fa-helicopter"></i> <span
+                                    data-i18n="rooms.emperor.features.helipad">مهبط طائرات</span></div>
+                        </div>
+                        <p class="room-description royal-font" data-i18n="rooms.emperor.description">أفخم جناح في العالم
+                            بمساحة 1500 متر مربع مع خدمات ملكية استثنائية.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- المرافق -->
+    <section class="facilities" id="facilities">
+        <div class="container">
+            <div class="section-header">
+                <h3 class="section-subtitle luxury-font royal-font"><i class="fas fa-spa"></i> <span
+                        data-i18n="facilities.subtitle">عالم الخمس نجوم</span></h3>
+                <h2 class="section-title luxury-font royal-font"><span data-i18n="facilities.title.part1">مرافق</span>
+                    <span data-i18n="facilities.title.part2">الفخامة</span>
+                </h2>
+                <p class="section-description royal-font" data-i18n="facilities.description">مرافق لوکسوري تقدم تجارب
+                    حصرية لا تتوفر إلا في أرقى المنتجعات العالمية، مصممة لترضي أذواق النخبة وتوفر متعة لا تنتهي.</p>
+            </div>
+            <div class="facilities-grid">
+                <div class="facility-card fade-in">
+                    <div class="facility-icon"><i class="fas fa-spa"></i></div>
+                    <h3 class="facility-title luxury-font royal-font" data-i18n="facilities.spa.title">سبا كريستال</h3>
+                    <p class="royal-font" data-i18n="facilities.spa.description">منتجع صحي مع أحواض من الرخام، علاجات
+                        باجود انواع.</p>
+                </div>
+                <div class="facility-card fade-in">
+                    <div class="facility-icon"><i class="fas fa-infinity"></i></div>
+                    <h3 class="facility-title luxury-font royal-font" data-i18n="facilities.pool.title">مسبح السحاب</h3>
+                    <p class="royal-font" data-i18n="facilities.pool.description">مسبح على ارتفاع 300 متر مع أرضية
+                        زجاجية تطل على المدينة.</p>
+                </div>
+                <div class="facility-card fade-in">
+                    <div class="facility-icon"><i class="fas fa-chess-queen"></i></div>
+                    <h3 class="facility-title luxury-font royal-font" data-i18n="facilities.club.title">نادي العائلة
+                        المالكة</h3>
+                    <p class="royal-font" data-i18n="facilities.club.description">نادي حصري لأعضاء العائلات المالكة
+                        والرؤساء.</p>
+                </div>
+                <div class="facility-card fade-in">
+                    <div class="facility-icon"><i class="fas fa-helicopter"></i></div>
+                    <h3 class="facility-title luxury-font royal-font" data-i18n="facilities.helicopter.title">مهبط
+                        الهليكوبتر</h3>
+                    <p class="royal-font" data-i18n="facilities.helicopter.description">مهبط خاص مع خدمة نقل جوي VIP
+                        وسيارات رولز رويس.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- نموذج الحجز -->
+    <section class="booking" id="booking">
+        <div class="container">
+            <div class="booking-container">
+                <div class="fade-in">
+                    <h3 class="section-subtitle luxury-font royal-font"><i class="fas fa-crown"></i> <span
+                            data-i18n="booking.vip">تجربة VIP</span></h3>
+                    <h2 class="section-title luxury-font royal-font"><span data-i18n="booking.title.part1">حجز</span>
+                        <span data-i18n="booking.title.part2">ملكي</span>
+                    </h2>
+                    <p class="section-description royal-font" data-i18n="booking.description">فريق الحجوزات الملكي في
+                        لوکسوري جاهز لترتيب كل تفاصيل إقامتك.</p>
+                    <div style="margin-top: 40px;">
+                        <h3 style="font-size: 1.6rem; margin-bottom: 20px; color: var(--gold);"
+                            class="luxury-font royal-font gold-text"><i class="fas fa-gem"></i> <span
+                                data-i18n="booking.membership">امتيازات العضوية</span></h3>
+                        <ul style="list-style: none;">
+                            <li style="margin-bottom: 15px; display: flex; align-items: center; gap: 15px;"><i
+                                    class="fas fa-crown" style="color: var(--gold);"></i> <span class="royal-font"
+                                    data-i18n="booking.benefits.manager">مدير إقامة شخصي 24/7</span></li>
+                            <li style="margin-bottom: 15px; display: flex; align-items: center; gap: 15px;"><i
+                                    class="fas fa-key" style="color: var(--gold);"></i> <span class="royal-font"
+                                    data-i18n="booking.benefits.access">وصول خاص للنوادي الحصرية</span></li>
+                            <li style="margin-bottom: 15px; display: flex; align-items: center; gap: 15px;"><i
+                                    class="fas fa-car" style="color: var(--gold);"></i> <span class="royal-font"
+                                    data-i18n="booking.benefits.car">خدمة رولز رويس وبنتلي</span></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="booking-form-container fade-in">
+                    <h3 class="form-title luxury-font royal-font"><span data-i18n="booking.form.title">تفاصيل</span>
+                        <span data-i18n="booking.form.subtitle">الحجز</span>
+                    </h3>
+                    <form class="booking-form" id="reservationForm">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="name"><i class="fas fa-user-crown"></i> <span
+                                        data-i18n="booking.form.name">الاسم</span></label>
+                                <input type="text" id="name" class="form-control" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email"><i class="fas fa-envelope-open-text"></i> <span
+                                        data-i18n="booking.form.email">البريد الإلكتروني</span></label>
+                                <input type="email" id="email" class="form-control" required>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="phone"><i class="fas fa-phone-volume"></i> <span
+                                        data-i18n="booking.form.phone">رقم الهاتف</span></label>
+                                <input type="tel" id="phone" class="form-control" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="roomType"><i class="fas fa-crown"></i> <span
+                                        data-i18n="booking.form.roomType">نوع الجناح</span></label>
+                                <select id="roomType" class="form-control" required>
+                                    <option value="" data-i18n="booking.form.select">اختر</option>
+                                    <option value="الجناح الرئاسي" data-i18n="booking.form.rooms.presidential">الجناح
+                                        الرئاسي - $5,000/ليلة</option>
+                                    <option value="الجناح الكلاسيكي" data-i18n="booking.form.rooms.classic">الجناح
+                                        الكلاسيكي - $3,500/ليلة</option>
+                                    <option value="جناح الكورنيش" data-i18n="booking.form.rooms.corniche">جناح الكورنيش
+                                        - $4,200/ليلة</option>
+                                    <option value="جناح الواحة" data-i18n="booking.form.rooms.oasis">جناح الواحة -
+                                        $3,800/ليلة</option>
+                                    <option value="الجناح كريستال" data-i18n="booking.form.rooms.crystal">الجناح كريستال
+                                        - $4,500/ليلة</option>
+                                    <option value="جناح رويال" data-i18n="booking.form.rooms.royal">جناح رويال -
+                                        $3,200/ليلة</option>
+                                    <option value="الجناح القمر" data-i18n="booking.form.rooms.moon">الجناح القمر -
+                                        $4,000/ليلة</option>
+                                    <option value="جناح رومانسي" data-i18n="booking.form.rooms.romantic">جناح رومانسي -
+                                        $3,900/ليلة</option>
+                                    <option value="جناح اللاجون" data-i18n="booking.form.rooms.lagoon">جناح اللاجون -
+                                        $3,600/ليلة</option>
+                                    <option value="جناح الإمبراطور" data-i18n="booking.form.rooms.emperor">جناح
+                                        الإمبراطور - $6,000/ليلة</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="checkIn"><i class="fas fa-calendar-star"></i> <span
+                                        data-i18n="booking.form.checkIn">تاريخ الوصول</span></label>
+                                <input type="date" id="checkIn" class="form-control" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="checkOut"><i class="fas fa-calendar-alt"></i> <span
+                                        data-i18n="booking.form.checkOut">تاريخ المغادرة</span></label>
+                                <input type="date" id="checkOut" class="form-control" required>
+                            </div>
+                        </div>
+                        <button type="submit" class="form-submit shine-effect" data-i18n="booking.form.submit"><i
+                                class="fas fa-gem"></i> تأكيد الحجز الملكي</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- الفوتر -->
+    <footer id="contact">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <div class="footer-logo luxury-font royal-font" data-i18n="footer.logo">لوکسوري<span>HOTEL</span>
+                    </div>
+                    <p class="footer-description royal-font" data-i18n="footer.description">لوکسوري ليس فندقاً، بل هو
+                        عالم من الفخامة المطلقة في قلب دبي.</p>
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-snapchat-ghost"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-pinterest-p"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="footer-column">
+                    <h3 class="luxury-font royal-font"><span data-i18n="footer.world">عالم</span> <span
+                            data-i18n="footer.luxuri">لوکسوري</span></h3>
+                    <ul class="footer-links">
+                        <li><a href="#home"><i class="fas fa-chevron-left"></i> <span
+                                    data-i18n="footer.links.palace">القصر الملكي</span></a></li>
+                        <li><a href="#rooms"><i class="fas fa-chevron-left"></i> <span
+                                    data-i18n="footer.links.suites">الأجنحة الإمبراطورية</span></a></li>
+                        <li><a href="#facilities"><i class="fas fa-chevron-left"></i> <span
+                                    data-i18n="footer.links.facilities">مرافق النخبة</span></a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3 class="luxury-font royal-font"><span data-i18n="footer.concierge">كونسيرج</span> <span
+                            data-i18n="footer.royal">ملكي</span></h3>
+                    <ul class="footer-contact">
+                        <li><i class="fas fa-map-marked-alt"></i>
+                            <div><strong class="royal-font" data-i18n="footer.address.title">القصر الذهبي</strong>
+                                <p class="royal-font" data-i18n="footer.address.details">برج لوکسوري، دبي</p>
+                            </div>
+                        </li>
+                        <li><i class="fas fa-phone-alt"></i>
+                            <div><strong class="royal-font" data-i18n="footer.phone.title">الخط الساخن</strong>
+                                <p class="royal-font">+971 000 000 000</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3 class="luxury-font royal-font" data-i18n="footer.newsletter.title">النشرة البريدية</h3>
+                    <p class="footer-description royal-font" data-i18n="footer.newsletter.description">انضم إلى قائمة
+                        النخبة.</p>
+                    <div style="margin-top: 20px;">
+                        <input type="email" class="form-control" data-i18n-placeholder="footer.newsletter.placeholder"
+                            placeholder="بريدك الإلكتروني" style="margin-bottom: 15px;">
+                        <button class="book-btn" style="width: 100%; text-align: center;"
+                            data-i18n="footer.newsletter.subscribe"><i class="fas fa-gem"></i> اشتراك</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // قائمة الترجمات لجميع اللغات المطلوبة
+        const translations = {
+            ar: {
+                // العربية
+                'logo': 'LUXURY<span>HOTEL</span>',
+                'nav.home': 'الرئيسية',
+                'nav.rooms': 'الأجنحة',
+                'nav.facilities': 'مرافق',
+                'nav.booking': 'حجز',
+                'nav.contact': 'اتصل بنا',
+                'hero.subtitle': 'الفخامة المطلقة',
+                'hero.title': 'إقامة الملكية في عالم لوکسوري',
+                'hero.description': 'فندق لوکسوري ليس مجرد مكان للإقامة، بل هو عالم من الفخامة المطلقة حيث يصبح كل ضيف ملكاً. في قلب دبي، نقدم تجربة إقامة تتجاوز التوقعات وتعيد تعريف مفهوم الرفاهية.',
+                'hero.cta': 'اكتشف الأجنحة الملكية',
+                'numbers.suites': 'جناح ملكي حصري',
+                'numbers.restaurants': 'مطاعم حائزة على نجوم',
+                'numbers.awards': 'جائزة عالمية للتميز',
+                'numbers.staff': 'نسبة موظفين لكل ضيف',
+                'rooms.subtitle': 'عالم الأجنحة الملكية',
+                'rooms.title.part1': 'الأجنحة',
+                'rooms.title.part2': 'الملكية',
+                'rooms.description': 'كل جناح في لوکسوري هو تحفة فنية مستقلة، مصممة بتوقيع كبار مصممي الديكور العالميين، مزودة بتقنيات ذكية متطورة وتطل على أروع المناظر البانورامية.',
+                'rooms.perNight': 'ليلة',
+                'rooms.presidential.title': 'الجناح الرئاسي',
+                'rooms.presidential.features.area': '1200 م²',
+                'rooms.presidential.features.pool': 'مسبح داخلي',
+                'rooms.presidential.features.theater': 'مسرح خاص',
+                'rooms.presidential.features.wine': 'قبو نبيذ',
+                'rooms.presidential.description': 'تحفة معمارية بمساحة 1200 متر مربع، مع إطلالة 360 درجة على دبي.',
+                'rooms.classic.title': 'الجناح الكلاسيكي',
+                'rooms.classic.features.area': '800 م²',
+                'rooms.classic.features.garage': 'جراج خاص',
+                'rooms.classic.features.air': 'هواء نقي',
+                'rooms.classic.features.pool': 'مسبح لانهائي',
+                'rooms.classic.description': 'تصميم فريد يجمع بين الذهب والعنبر الأسود مع جاكوزي بمياه معدنية.',
+                'rooms.corniche.title': 'جناح الكورنيش',
+                'rooms.corniche.features.waterfall': 'شلال داخلي',
+                'rooms.corniche.features.aquarium': 'حوض أسماك',
+                'rooms.corniche.features.spa': 'سبا خاص',
+                'rooms.corniche.features.games': 'ألعاب ذكية',
+                'rooms.corniche.description': 'تصميم بحري فاخر مع ألوان الياقوت الأزرق وعلاجات بحرية.',
+                'rooms.oasis.title': 'جناح الواحة',
+                'rooms.oasis.features.garden': 'حديقة داخلية',
+                'rooms.oasis.features.palms': 'أشجار نخيل',
+                'rooms.oasis.features.birds': 'طيور زينة',
+                'rooms.oasis.features.beach': 'شاطئ خاص',
+                'rooms.oasis.description': 'جناح صديق للبيئة يجمع بين الفخامة والطبيعة الخلابة.',
+                'rooms.crystal.title': 'الجناح كريستال',
+                'rooms.crystal.features.walls': 'جدران كريستال',
+                'rooms.crystal.features.chandeliers': 'ثريات ماسية',
+                'rooms.crystal.features.cooling': 'تبريد ذكي',
+                'rooms.crystal.features.icebar': 'بار مثلجات',
+                'rooms.crystal.description': 'تصميم كريستالي نقي مع ثريات مصنوعة من الماس الحقيقي.',
+                'rooms.royal.title': 'جناح رويال',
+                'rooms.royal.features.fireplace': 'مدفئة حجرية',
+                'rooms.royal.features.furniture': 'أثاث كلاسيكي',
+                'rooms.royal.features.library': 'مكتبة نادرة',
+                'rooms.royal.features.bar': 'بار تقليدي',
+                'rooms.royal.description': 'تصميم كلاسيكي فاخر مع أثاث من خشب الماهوجني النادر.',
+                'rooms.moon.title': 'الجناح القمر',
+                'rooms.moon.features.lighting': 'إضاءة قمرية',
+                'rooms.moon.features.ceiling': 'سقف نجمي',
+                'rooms.moon.features.cloud': 'غرفة سحابية',
+                'rooms.moon.features.sound': 'صوت سماوي',
+                'rooms.moon.description': 'تصميم سماوي فريد مع سقف نجمي متحرك وإضاءة قمرية.',
+                'rooms.romantic.title': 'جناح رومانسي',
+                'rooms.romantic.features.design': 'تصميم رومانسي',
+                'rooms.romantic.features.garden': 'حديقة ورود',
+                'rooms.romantic.features.champagne': 'شمبانيا',
+                'rooms.romantic.features.wedding': 'غرفة خاطبة',
+                'rooms.romantic.description': 'جناح مخصص للأزواج مع حديقة ورود داخلية وشامبانيا حصرية.',
+                'rooms.lagoon.title': 'جناح اللاجون',
+                'rooms.lagoon.features.waterfall': 'شلال مائي',
+                'rooms.lagoon.features.jacuzzi': 'جاكوزي فيروزي',
+                'rooms.lagoon.features.beach': 'شاطئ داخلي',
+                'rooms.lagoon.features.marine': 'تصميم بحري',
+                'rooms.lagoon.description': 'تصميم بحري فيروزي مستوحى من أجمل البحار الاستوائية.',
+                'rooms.emperor.title': 'جناح الإمبراطور',
+                'rooms.emperor.features.area': '1500 م²',
+                'rooms.emperor.features.golf': 'ملعب جولف',
+                'rooms.emperor.features.casino': 'كازينو خاص',
+                'rooms.emperor.features.helipad': 'مهبط طائرات',
+                'rooms.emperor.description': 'أفخم جناح في العالم بمساحة 1500 متر مربع مع خدمات ملكية استثنائية.',
+                'facilities.subtitle': 'عالم الخمس نجوم',
+                'facilities.title.part1': 'مرافق',
+                'facilities.title.part2': 'الفخامة',
+                'facilities.description': 'مرافق لوکسوري تقدم تجارب حصرية لا تتوفر إلا في أرقى المنتجعات العالمية، مصممة لترضي أذواق النخبة وتوفر متعة لا تنتهي.',
+                'facilities.spa.title': 'سبا كريستال',
+                'facilities.spa.description': 'منتجع صحي مع أحواض من الرخام، علاجات باجود انواع.',
+                'facilities.pool.title': 'مسبح السحاب',
+                'facilities.pool.description': 'مسبح على ارتفاع 300 متر مع أرضية زجاجية تطل على المدينة.',
+                'facilities.club.title': 'نادي العائلة المالكة',
+                'facilities.club.description': 'نادي حصري لأعضاء العائلات المالكة والرؤساء.',
+                'facilities.helicopter.title': 'مهبط الهليكوبتر',
+                'facilities.helicopter.description': 'مهبط خاص مع خدمة نقل جوي VIP وسيارات رولز رويس.',
+                'booking.vip': 'تجربة VIP',
+                'booking.title.part1': 'حجز',
+                'booking.title.part2': 'ملكي',
+                'booking.description': 'فريق الحجوزات الملكي في لوکسوري جاهز لترتيب كل تفاصيل إقامتك.',
+                'booking.membership': 'امتيازات العضوية',
+                'booking.benefits.manager': 'مدير إقامة شخصي 24/7',
+                'booking.benefits.access': 'وصول خاص للنوادي الحصرية',
+                'booking.benefits.car': 'خدمة رولز رويس وبنتلي',
+                'booking.form.title': 'تفاصيل',
+                'booking.form.subtitle': 'الحجز',
+                'booking.form.name': 'الاسم',
+                'booking.form.email': 'البريد الإلكتروني',
+                'booking.form.phone': 'رقم الهاتف',
+                'booking.form.roomType': 'نوع الجناح',
+                'booking.form.select': 'اختر',
+                'booking.form.rooms.presidential': 'الجناح الرئاسي - $5,000/ليلة',
+                'booking.form.rooms.classic': 'الجناح الكلاسيكي - $3,500/ليلة',
+                'booking.form.rooms.corniche': 'جناح الكورنيش - $4,200/ليلة',
+                'booking.form.rooms.oasis': 'جناح الواحة - $3,800/ليلة',
+                'booking.form.rooms.crystal': 'الجناح كريستال - $4,500/ليلة',
+                'booking.form.rooms.royal': 'جناح رويال - $3,200/ليلة',
+                'booking.form.rooms.moon': 'الجناح القمر - $4,000/ليلة',
+                'booking.form.rooms.romantic': 'جناح رومانسي - $3,900/ليلة',
+                'booking.form.rooms.lagoon': 'جناح اللاجون - $3,600/ليلة',
+                'booking.form.rooms.emperor': 'جناح الإمبراطور - $6,000/ليلة',
+                'booking.form.checkIn': 'تاريخ الوصول',
+                'booking.form.checkOut': 'تاريخ المغادرة',
+                'booking.form.submit': 'تأكيد الحجز الملكي',
+                'footer.logo': 'لوکسوري<span>HOTEL</span>',
+                'footer.description': 'لوکسوري ليس فندقاً، بل هو عالم من الفخامة المطلقة في قلب دبي.',
+                'footer.world': 'عالم',
+                'footer.luxuri': 'لوکسوري',
+                'footer.links.palace': 'القصر الملكي',
+                'footer.links.suites': 'الأجنحة الإمبراطورية',
+                'footer.links.facilities': 'مرافق النخبة',
+                'footer.concierge': 'كونسيرج',
+                'footer.royal': 'ملكي',
+                'footer.address.title': 'القصر الذهبي',
+                'footer.address.details': 'برج لوکسوري، دبي',
+                'footer.phone.title': 'الخط الساخن',
+                'footer.newsletter.title': 'النشرة البريدية',
+                'footer.newsletter.description': 'انضم إلى قائمة النخبة.',
+                'footer.newsletter.placeholder': 'بريدك الإلكتروني',
+                'footer.newsletter.subscribe': 'اشتراك'
+            },
+            en: {
+                // English
+                'logo': 'LUXURY<span>HOTEL</span>',
+                'nav.home': 'Home',
+                'nav.rooms': 'Suites',
+                'nav.facilities': 'Facilities',
+                'nav.booking': 'Booking',
+                'nav.contact': 'Contact',
+                'hero.subtitle': 'Absolute Luxury',
+                'hero.title': 'Royal Stay in Luxuri World',
+                'hero.description': 'Luxuri Hotel is not just a place to stay, but a world of absolute luxury where every guest becomes royalty. In the heart of Dubai, we offer a stay experience that exceeds expectations and redefines the concept of luxury.',
+                'hero.cta': 'Discover Royal Suites',
+                'numbers.suites': 'Exclusive Royal Suites',
+                'numbers.restaurants': 'Star-rated Restaurants',
+                'numbers.awards': 'Global Excellence Awards',
+                'numbers.staff': 'Staff per Guest Ratio',
+                'rooms.subtitle': 'World of Royal Suites',
+                'rooms.title.part1': 'Royal',
+                'rooms.title.part2': 'Suites',
+                'rooms.description': 'Each suite in Luxuri is an independent masterpiece, designed by top international interior designers, equipped with advanced smart technologies and overlooking the most stunning panoramic views.',
+                'rooms.perNight': 'night',
+                'rooms.presidential.title': 'Presidential Suite',
+                'rooms.presidential.features.area': '1200 m²',
+                'rooms.presidential.features.pool': 'Indoor Pool',
+                'rooms.presidential.features.theater': 'Private Theater',
+                'rooms.presidential.features.wine': 'Wine Cellar',
+                'rooms.presidential.description': 'Architectural masterpiece of 1200 square meters, with 360-degree view of Dubai.',
+                'rooms.classic.title': 'Classic Suite',
+                'rooms.classic.features.area': '800 m²',
+                'rooms.classic.features.garage': 'Private Garage',
+                'rooms.classic.features.air': 'Fresh Air',
+                'rooms.classic.features.pool': 'Infinity Pool',
+                'rooms.classic.description': 'Unique design combining gold and black amber with mineral water jacuzzi.',
+                'rooms.corniche.title': 'Corniche Suite',
+                'rooms.corniche.features.waterfall': 'Indoor Waterfall',
+                'rooms.corniche.features.aquarium': 'Aquarium',
+                'rooms.corniche.features.spa': 'Private Spa',
+                'rooms.corniche.features.games': 'Smart Games',
+                'rooms.corniche.description': 'Luxury marine design with sapphire blue colors and marine treatments.',
+                'rooms.oasis.title': 'Oasis Suite',
+                'rooms.oasis.features.garden': 'Indoor Garden',
+                'rooms.oasis.features.palms': 'Palm Trees',
+                'rooms.oasis.features.birds': 'Ornamental Birds',
+                'rooms.oasis.features.beach': 'Private Beach',
+                'rooms.oasis.description': 'Eco-friendly suite combining luxury and stunning nature.',
+                'rooms.crystal.title': 'Crystal Suite',
+                'rooms.crystal.features.walls': 'Crystal Walls',
+                'rooms.crystal.features.chandeliers': 'Diamond Chandeliers',
+                'rooms.crystal.features.cooling': 'Smart Cooling',
+                'rooms.crystal.features.icebar': 'Ice Cream Bar',
+                'rooms.crystal.description': 'Pure crystal design with chandeliers made of real diamonds.',
+                'rooms.royal.title': 'Royal Suite',
+                'rooms.royal.features.fireplace': 'Stone Fireplace',
+                'rooms.royal.features.furniture': 'Classic Furniture',
+                'rooms.royal.features.library': 'Rare Library',
+                'rooms.royal.features.bar': 'Traditional Bar',
+                'rooms.royal.description': 'Luxury classic design with rare mahogany furniture.',
+                'rooms.moon.title': 'Moon Suite',
+                'rooms.moon.features.lighting': 'Moon Lighting',
+                'rooms.moon.features.ceiling': 'Starry Ceiling',
+                'rooms.moon.features.cloud': 'Cloud Room',
+                'rooms.moon.features.sound': 'Celestial Sound',
+                'rooms.moon.description': 'Unique celestial design with moving starry ceiling and moon lighting.',
+                'rooms.romantic.title': 'Romantic Suite',
+                'rooms.romantic.features.design': 'Romantic Design',
+                'rooms.romantic.features.garden': 'Rose Garden',
+                'rooms.romantic.features.champagne': 'Champagne',
+                'rooms.romantic.features.wedding': 'Wedding Room',
+                'rooms.romantic.description': 'Suite dedicated for couples with indoor rose garden and exclusive champagne.',
+                'rooms.lagoon.title': 'Lagoon Suite',
+                'rooms.lagoon.features.waterfall': 'Water Waterfall',
+                'rooms.lagoon.features.jacuzzi': 'Turquoise Jacuzzi',
+                'rooms.lagoon.features.beach': 'Indoor Beach',
+                'rooms.lagoon.features.marine': 'Marine Design',
+                'rooms.lagoon.description': 'Turquoise marine design inspired by the most beautiful tropical seas.',
+                'rooms.emperor.title': 'Emperor Suite',
+                'rooms.emperor.features.area': '1500 m²',
+                'rooms.emperor.features.golf': 'Golf Course',
+                'rooms.emperor.features.casino': 'Private Casino',
+                'rooms.emperor.features.helipad': 'Helipad',
+                'rooms.emperor.description': 'The most luxurious suite in the world with 1500 square meters and exceptional royal services.',
+                'facilities.subtitle': 'Five-Star World',
+                'facilities.title.part1': 'Luxury',
+                'facilities.title.part2': 'Facilities',
+                'facilities.description': 'Luxuri facilities offer exclusive experiences found only in the finest international resorts, designed to satisfy elite tastes and provide endless enjoyment.',
+                'facilities.spa.title': 'Crystal Spa',
+                'facilities.spa.description': 'Wellness resort with marble pools, finest quality treatments.',
+                'facilities.pool.title': 'Cloud Pool',
+                'facilities.pool.description': 'Pool at 300 meters height with glass floor overlooking the city.',
+                'facilities.club.title': 'Royal Family Club',
+                'facilities.club.description': 'Exclusive club for royal family members and presidents.',
+                'facilities.helicopter.title': 'Helicopter Pad',
+                'facilities.helicopter.description': 'Private helipad with VIP air transport and Rolls Royce cars.',
+                'booking.vip': 'VIP Experience',
+                'booking.title.part1': 'Royal',
+                'booking.title.part2': 'Booking',
+                'booking.description': 'The royal booking team at Luxuri is ready to arrange every detail of your stay.',
+                'booking.membership': 'Membership Benefits',
+                'booking.benefits.manager': 'Personal Concierge 24/7',
+                'booking.benefits.access': 'Exclusive Club Access',
+                'booking.benefits.car': 'Rolls Royce & Bentley Service',
+                'booking.form.title': 'Booking',
+                'booking.form.subtitle': 'Details',
+                'booking.form.name': 'Full Name',
+                'booking.form.email': 'Email Address',
+                'booking.form.phone': 'Phone Number',
+                'booking.form.roomType': 'Suite Type',
+                'booking.form.select': 'Select',
+                'booking.form.rooms.presidential': 'Presidential Suite - $5,000/night',
+                'booking.form.rooms.classic': 'Classic Suite - $3,500/night',
+                'booking.form.rooms.corniche': 'Corniche Suite - $4,200/night',
+                'booking.form.rooms.oasis': 'Oasis Suite - $3,800/night',
+                'booking.form.rooms.crystal': 'Crystal Suite - $4,500/night',
+                'booking.form.rooms.royal': 'Royal Suite - $3,200/night',
+                'booking.form.rooms.moon': 'Moon Suite - $4,000/night',
+                'booking.form.rooms.romantic': 'Romantic Suite - $3,900/night',
+                'booking.form.rooms.lagoon': 'Lagoon Suite - $3,600/night',
+                'booking.form.rooms.emperor': 'Emperor Suite - $6,000/night',
+                'booking.form.checkIn': 'Check-in Date',
+                'booking.form.checkOut': 'Check-out Date',
+                'booking.form.submit': 'Confirm Royal Booking',
+                'footer.logo': 'LUXURY<span>HOTEL</span>',
+                'footer.description': 'Luxuri is not a hotel, but a world of absolute luxury in the heart of Dubai.',
+                'footer.world': 'World of',
+                'footer.luxuri': 'Luxuri',
+                'footer.links.palace': 'Royal Palace',
+                'footer.links.suites': 'Imperial Suites',
+                'footer.links.facilities': 'Elite Facilities',
+                'footer.concierge': 'Royal',
+                'footer.royal': 'Concierge',
+                'footer.address.title': 'Golden Palace',
+                'footer.address.details': 'Luxuri Tower, Dubai',
+                'footer.phone.title': 'Hotline',
+                'footer.newsletter.title': 'Newsletter',
+                'footer.newsletter.description': 'Join the elite list.',
+                'footer.newsletter.placeholder': 'Your Email',
+                'footer.newsletter.subscribe': 'Subscribe'
+            },
+            zh: {
+                // Chinese (Simplified)
+                'logo': '豪华<span>酒店</span>',
+                'nav.home': '首页',
+                'nav.rooms': '套房',
+                'nav.facilities': '设施',
+                'nav.booking': '预订',
+                'nav.contact': '联系我们',
+                'hero.subtitle': '极致奢华',
+                'hero.title': '在卢克苏里世界的皇家住宿',
+                'hero.description': '卢克苏里酒店不仅仅是一个住宿的地方，而是一个极致奢华的世界，每位客人都成为皇室成员。在迪拜市中心，我们提供超越期望、重新定义奢华概念的住宿体验。',
+                'hero.cta': '发现皇家套房',
+                'numbers.suites': '独家皇家套房',
+                'numbers.restaurants': '星级餐厅',
+                'numbers.awards': '全球卓越奖',
+                'numbers.staff': '员工与客人比例',
+                'rooms.subtitle': '皇家套房世界',
+                'rooms.title.part1': '皇家',
+                'rooms.title.part2': '套房',
+                'rooms.description': '卢克苏里的每间套房都是独立的杰作，由顶级国际室内设计师设计，配备先进的智能技术，俯瞰最令人惊叹的全景。',
+                'rooms.perNight': '晚',
+                'rooms.presidential.title': '总统套房',
+                'rooms.presidential.features.area': '1200平方米',
+                'rooms.presidential.features.pool': '室内泳池',
+                'rooms.presidential.features.theater': '私人影院',
+                'rooms.presidential.features.wine': '酒窖',
+                'rooms.presidential.description': '1200平方米的建筑杰作，360度俯瞰迪拜。',
+                'rooms.classic.title': '经典套房',
+                'rooms.classic.features.area': '800平方米',
+                'rooms.classic.features.garage': '私人车库',
+                'rooms.classic.features.air': '新鲜空气',
+                'rooms.classic.features.pool': '无边泳池',
+                'rooms.classic.description': '独特设计，融合黄金和黑琥珀，配有矿泉水按摩浴缸。',
+                'rooms.corniche.title': '滨海套房',
+                'rooms.corniche.features.waterfall': '室内瀑布',
+                'rooms.corniche.features.aquarium': '水族馆',
+                'rooms.corniche.features.spa': '私人水疗',
+                'rooms.corniche.features.games': '智能游戏',
+                'rooms.corniche.description': '豪华海洋设计，采用蓝宝石色调和海洋疗法。',
+                'rooms.oasis.title': '绿洲套房',
+                'rooms.oasis.features.garden': '室内花园',
+                'rooms.oasis.features.palms': '棕榈树',
+                'rooms.oasis.features.birds': '观赏鸟',
+                'rooms.oasis.features.beach': '私人海滩',
+                'rooms.oasis.description': '环保套房，融合奢华与迷人自然。',
+                'rooms.crystal.title': '水晶套房',
+                'rooms.crystal.features.walls': '水晶墙',
+                'rooms.crystal.features.chandeliers': '钻石吊灯',
+                'rooms.crystal.features.cooling': '智能冷却',
+                'rooms.crystal.features.icebar': '冰淇淋吧',
+                'rooms.crystal.description': '纯净水晶设计，配有真钻石制成的吊灯。',
+                'rooms.royal.title': '皇家套房',
+                'rooms.royal.features.fireplace': '石壁炉',
+                'rooms.royal.features.furniture': '经典家具',
+                'rooms.royal.features.library': '珍稀图书馆',
+                'rooms.royal.features.bar': '传统酒吧',
+                'rooms.royal.description': '豪华经典设计，配有珍稀桃花心木家具。',
+                'rooms.moon.title': '月亮套房',
+                'rooms.moon.features.lighting': '月光照明',
+                'rooms.moon.features.ceiling': '星空天花板',
+                'rooms.moon.features.cloud': '云室',
+                'rooms.moon.features.sound': '天籁之音',
+                'rooms.moon.description': '独特的天空设计，配有可移动星空天花板和月光照明。',
+                'rooms.romantic.title': '浪漫套房',
+                'rooms.romantic.features.design': '浪漫设计',
+                'rooms.romantic.features.garden': '玫瑰花园',
+                'rooms.romantic.features.champagne': '香槟',
+                'rooms.romantic.features.wedding': '婚房',
+                'rooms.romantic.description': '专为情侣设计的套房，配有室内玫瑰花园和独家香槟。',
+                'rooms.lagoon.title': '泻湖套房',
+                'rooms.lagoon.features.waterfall': '水瀑布',
+                'rooms.lagoon.features.jacuzzi': '绿松石按摩浴缸',
+                'rooms.lagoon.features.beach': '室内海滩',
+                'rooms.lagoon.features.marine': '海洋设计',
+                'rooms.lagoon.description': '绿松石海洋设计，灵感来自最美丽的热带海洋。',
+                'rooms.emperor.title': '帝王套房',
+                'rooms.emperor.features.area': '1500平方米',
+                'rooms.emperor.features.golf': '高尔夫球场',
+                'rooms.emperor.features.casino': '私人赌场',
+                'rooms.emperor.features.helipad': '直升机停机坪',
+                'rooms.emperor.description': '世界上最豪华的套房，面积1500平方米，提供卓越的皇家服务。',
+                'facilities.subtitle': '五星世界',
+                'facilities.title.part1': '豪华',
+                'facilities.title.part2': '设施',
+                'facilities.description': '卢克苏里设施提供仅在最高端国际度假村才能找到的独家体验，旨在满足精英品味，提供无尽享受。',
+                'facilities.spa.title': '水晶水疗',
+                'facilities.spa.description': '健康度假村，大理石泳池，最优质护理。',
+                'facilities.pool.title': '云端泳池',
+                'facilities.pool.description': '300米高泳池，玻璃地板俯瞰城市。',
+                'facilities.club.title': '皇室家族俱乐部',
+                'facilities.club.description': '专为皇室成员和总统设立的独家俱乐部。',
+                'facilities.helicopter.title': '直升机停机坪',
+                'facilities.helicopter.description': '私人停机坪，VIP空中交通和劳斯莱斯汽车服务。',
+                'booking.vip': '贵宾体验',
+                'booking.title.part1': '皇家',
+                'booking.title.part2': '预订',
+                'booking.description': '卢克苏里的皇家预订团队随时准备为您安排住宿的每一个细节。',
+                'booking.membership': '会员福利',
+                'booking.benefits.manager': '个人礼宾服务 24/7',
+                'booking.benefits.access': '独家俱乐部使用权',
+                'booking.benefits.car': '劳斯莱斯和宾利服务',
+                'booking.form.title': '预订',
+                'booking.form.subtitle': '详情',
+                'booking.form.name': '全名',
+                'booking.form.email': '电子邮件地址',
+                'booking.form.phone': '电话号码',
+                'booking.form.roomType': '套房类型',
+                'booking.form.select': '选择',
+                'booking.form.rooms.presidential': '总统套房 - $5,000/晚',
+                'booking.form.rooms.classic': '经典套房 - $3,500/晚',
+                'booking.form.rooms.corniche': '滨海套房 - $4,200/晚',
+                'booking.form.rooms.oasis': '绿洲套房 - $3,800/晚',
+                'booking.form.rooms.crystal': '水晶套房 - $4,500/晚',
+                'booking.form.rooms.royal': '皇家套房 - $3,200/晚',
+                'booking.form.rooms.moon': '月亮套房 - $4,000/晚',
+                'booking.form.rooms.romantic': '浪漫套房 - $3,900/晚',
+                'booking.form.rooms.lagoon': '泻湖套房 - $3,600/晚',
+                'booking.form.rooms.emperor': '帝王套房 - $6,000/晚',
+                'booking.form.checkIn': '入住日期',
+                'booking.form.checkOut': '退房日期',
+                'booking.form.submit': '确认皇家预订',
+                'footer.logo': '豪华<span>酒店</span>',
+                'footer.description': '卢克苏里不是一家酒店，而是迪拜市中心的极致奢华世界。',
+                'footer.world': '世界',
+                'footer.luxuri': '卢克苏里',
+                'footer.links.palace': '皇宫',
+                'footer.links.suites': '帝王套房',
+                'footer.links.facilities': '精英设施',
+                'footer.concierge': '皇家',
+                'footer.royal': '礼宾',
+                'footer.address.title': '黄金宫',
+                'footer.address.details': '卢克苏里大厦，迪拜',
+                'footer.phone.title': '热线',
+                'footer.newsletter.title': '通讯',
+                'footer.newsletter.description': '加入精英名单。',
+                'footer.newsletter.placeholder': '您的邮箱',
+                'footer.newsletter.subscribe': '订阅'
+            },
+            hi: {
+                // Hindi
+                'logo': 'लक्जरी<span>होटल</span>',
+                'nav.home': 'होम',
+                'nav.rooms': 'सुइट्स',
+                'nav.facilities': 'सुविधाएं',
+                'nav.booking': 'बुकिंग',
+                'nav.contact': 'संपर्क करें',
+                'hero.subtitle': 'पूर्ण विलासिता',
+                'hero.title': 'लक्‍जुरी वर्ल्ड में शाही प्रवास',
+                'hero.description': 'लक्‍जुरी होटल सिर्फ रहने की जगह नहीं है, बल्कि पूर्ण विलासिता की दुनिया है जहां हर अतिथि राजा बन जाता है। दुबई के दिल में, हम एक प्रवास अनुभव प्रदान करते हैं जो उम्मीदों से परे है और विलासिता की अवधारणा को फिर से परिभाषित करता है।',
+                'hero.cta': 'शाही सुइट्स खोजें',
+                'numbers.suites': 'अनन्य शाही सुइट्स',
+                'numbers.restaurants': 'स्टार रेटेड रेस्तरां',
+                'numbers.awards': 'वैश्विक उत्कृष्टता पुरस्कार',
+                'numbers.staff': 'प्रति अतिथि कर्मचारी अनुपात',
+                'rooms.subtitle': 'शाही सुइट्स की दुनिया',
+                'rooms.title.part1': 'शाही',
+                'rooms.title.part2': 'सुइट्स',
+                'rooms.description': 'लक्‍जुरी में प्रत्येक सूट एक स्वतंत्र उत्कृष्ट कृति है, जिसे शीर्ष अंतरराष्ट्रीय इंटीरियर डिजाइनरों द्वारा डिजाइन किया गया है, उन्नत स्मार्ट तकनीकों से सुसज्जित है और सबसे आश्चर्यजनक मनोरम दृश्यों को देखता है।',
+                'rooms.perNight': 'रात',
+                'rooms.presidential.title': 'राष्ट्रपति सूट',
+                'rooms.presidential.features.area': '1200 वर्ग मीटर',
+                'rooms.presidential.features.pool': 'इनडोर पूल',
+                'rooms.presidential.features.theater': 'निजी थियेटर',
+                'rooms.presidential.features.wine': 'वाइन सेलर',
+                'rooms.presidential.description': '1200 वर्ग मीटर की वास्तुशिल्प उत्कृष्ट कृति, दुबई के 360 डिग्री दृश्य के साथ।',
+                'rooms.classic.title': 'क्लासिक सूट',
+                'rooms.classic.features.area': '800 वर्ग मीटर',
+                'rooms.classic.features.garage': 'निजी गेराज',
+                'rooms.classic.features.air': 'ताजा हवा',
+                'rooms.classic.features.pool': 'अनंत पूल',
+                'rooms.classic.description': 'सोने और काले एम्बर का अनूठा डिजाइन खनिज पानी जकूज़ी के साथ।',
+                'rooms.corniche.title': 'कॉर्निश सूट',
+                'rooms.corniche.features.waterfall': 'इनडोर झरना',
+                'rooms.corniche.features.aquarium': 'एक्वेरियम',
+                'rooms.corniche.features.spa': 'निजी स्पा',
+                'rooms.corniche.features.games': 'स्मार्ट गेम्स',
+                'rooms.corniche.description': 'नीलम नीले रंगों और समुद्री उपचारों के साथ लक्जरी समुद्री डिजाइन।',
+                'rooms.oasis.title': 'ओएसिस सूट',
+                'rooms.oasis.features.garden': 'इनडोर गार्डन',
+                'rooms.oasis.features.palms': 'ताड़ के पेड़',
+                'rooms.oasis.features.birds': 'सजावटी पक्षी',
+                'rooms.oasis.features.beach': 'निजी समुद्र तट',
+                'rooms.oasis.description': 'पर्यावरण के अनुकूल सूट विलासिता और आश्चर्यजनक प्रकृति का संयोजन।',
+                'rooms.crystal.title': 'क्रिस्टल सूट',
+                'rooms.crystal.features.walls': 'क्रिस्टल दीवारें',
+                'rooms.crystal.features.chandeliers': 'हीरे के झूमर',
+                'rooms.crystal.features.cooling': 'स्मार्ट कूलिंग',
+                'rooms.crystal.features.icebar': 'आइसक्रीम बार',
+                'rooms.crystal.description': 'असली हीरों से बने झूमरों के साथ शुद्ध क्रिस्टल डिजाइन।',
+                'rooms.royal.title': 'रॉयल सूट',
+                'rooms.royal.features.fireplace': 'पत्थर की चिमनी',
+                'rooms.royal.features.furniture': 'क्लासिक फर्नीचर',
+                'rooms.royal.features.library': 'दुर्लभ पुस्तकालय',
+                'rooms.royal.features.bar': 'पारंपरिक बार',
+                'rooms.royal.description': 'दुर्लभ महोगनी फर्नीचर के साथ लक्जरी क्लासिक डिजाइन।',
+                'rooms.moon.title': 'मून सूट',
+                'rooms.moon.features.lighting': 'चंद्रमा प्रकाश',
+                'rooms.moon.features.ceiling': 'तारों भरी छत',
+                'rooms.moon.features.cloud': 'बादल कक्ष',
+                'rooms.moon.features.sound': 'आकाशीय ध्वनि',
+                'rooms.moon.description': 'चलती तारों भरी छत और चंद्रमा प्रकाश के साथ अद्वितीय आकाशीय डिजाइन।',
+                'rooms.romantic.title': 'रोमांटिक सूट',
+                'rooms.romantic.features.design': 'रोमांटिक डिजाइन',
+                'rooms.romantic.features.garden': 'गुलाब का बगीचा',
+                'rooms.romantic.features.champagne': 'शैंपेन',
+                'rooms.romantic.features.wedding': 'वेडिंग रूम',
+                'rooms.romantic.description': 'इनडोर गुलाब के बगीचे और विशेष शैंपेन के साथ जोड़ों के लिए समर्पित सूट।',
+                'rooms.lagoon.title': 'लैगून सूट',
+                'rooms.lagoon.features.waterfall': 'जल झरना',
+                'rooms.lagoon.features.jacuzzi': 'फ़िरोज़ा जकूज़ी',
+                'rooms.lagoon.features.beach': 'इनडोर बीच',
+                'rooms.lagoon.features.marine': 'समुद्री डिजाइन',
+                'rooms.lagoon.description': 'फ़िरोज़ा समुद्री डिजाइन सबसे खूबसूरत उष्णकटिबंधीय समुद्रों से प्रेरित।',
+                'rooms.emperor.title': 'एम्परर सूट',
+                'rooms.emperor.features.area': '1500 वर्ग मीटर',
+                'rooms.emperor.features.golf': 'गोल्फ कोर्स',
+                'rooms.emperor.features.casino': 'निजी कैसीनो',
+                'rooms.emperor.features.helipad': 'हेलीपैड',
+                'rooms.emperor.description': 'दुनिया का सबसे शानदार सूट 1500 वर्ग मीटर और असाधारण शाही सेवाओं के साथ।',
+                'facilities.subtitle': 'पांच सितारा दुनिया',
+                'facilities.title.part1': 'लक्जरी',
+                'facilities.title.part2': 'सुविधाएं',
+                'facilities.description': 'लक्‍जुरी सुविधाएं विशेष अनुभव प्रदान करती हैं जो केवल बेहतरीन अंतरराष्ट्रीय रिसॉर्ट्स में पाए जाते हैं, जो कुलीन स्वाद को संतुष्ट करने और अंतहीन आनंद प्रदान करने के लिए डिज़ाइन किए गए हैं।',
+                'facilities.spa.title': 'क्रिस्टल स्पा',
+                'facilities.spa.description': 'संगमरमर के पूल के साथ कल्याण रिसॉर्ट, बेहतरीन गुणवत्ता वाले उपचार।',
+                'facilities.pool.title': 'क्लाउड पूल',
+                'facilities.pool.description': '300 मीटर ऊंचाई पर पूल कांच के फर्श के साथ शहर को देखता हुआ।',
+                'facilities.club.title': 'रॉयल फैमिली क्लब',
+                'facilities.club.description': 'शाही परिवार के सदस्यों और राष्ट्रपतियों के लिए विशेष क्लब।',
+                'facilities.helicopter.title': 'हेलिकॉप्टर पैड',
+                'facilities.helicopter.description': 'वीआईपी हवाई परिवहन और रोल्स रॉयस कारों के साथ निजी हेलीपैड।',
+                'booking.vip': 'वीआईपी अनुभव',
+                'booking.title.part1': 'शाही',
+                'booking.title.part2': 'बुकिंग',
+                'booking.description': 'लक्‍जुरी में शाही बुकिंग टीम आपके प्रवास के हर विवरण की व्यवस्था करने के लिए तैयार है।',
+                'booking.membership': 'सदस्यता लाभ',
+                'booking.benefits.manager': 'व्यक्तिगत कॉन्सियर्ज 24/7',
+                'booking.benefits.access': 'विशेष क्लब पहुंच',
+                'booking.benefits.car': 'रोल्स रॉयस और बेंटले सेवा',
+                'booking.form.title': 'बुकिंग',
+                'booking.form.subtitle': 'विवरण',
+                'booking.form.name': 'पूरा नाम',
+                'booking.form.email': 'ईमेल पता',
+                'booking.form.phone': 'फोन नंबर',
+                'booking.form.roomType': 'सूट प्रकार',
+                'booking.form.select': 'चुनें',
+                'booking.form.rooms.presidential': 'राष्ट्रपति सूट - $5,000/रात',
+                'booking.form.rooms.classic': 'क्लासिक सूट - $3,500/रात',
+                'booking.form.rooms.corniche': 'कॉर्निश सूट - $4,200/रात',
+                'booking.form.rooms.oasis': 'ओएसिस सूट - $3,800/रात',
+                'booking.form.rooms.crystal': 'क्रिस्टल सूट - $4,500/रात',
+                'booking.form.rooms.royal': 'रॉयल सूट - $3,200/रात',
+                'booking.form.rooms.moon': 'मून सूट - $4,000/रात',
+                'booking.form.rooms.romantic': 'रोमांटिक सूट - $3,900/रात',
+                'booking.form.rooms.lagoon': 'लैगून सूट - $3,600/रात',
+                'booking.form.rooms.emperor': 'एम्परर सूट - $6,000/रात',
+                'booking.form.checkIn': 'चेक-इन तिथि',
+                'booking.form.checkOut': 'चेक-आउट तिथि',
+                'booking.form.submit': 'शाही बुकिंग की पुष्टि करें',
+                'footer.logo': 'लक्जरी<span>होटल</span>',
+                'footer.description': 'लक्‍जुरी एक होटल नहीं है, बल्कि दुबई के दिल में पूर्ण विलासिता की दुनिया है।',
+                'footer.world': 'दुनिया',
+                'footer.luxuri': 'लक्‍जुरी',
+                'footer.links.palace': 'रॉयल पैलेस',
+                'footer.links.suites': 'इंपीरियल सुइट्स',
+                'footer.links.facilities': 'कुलीन सुविधाएं',
+                'footer.concierge': 'शाही',
+                'footer.royal': 'कॉन्सियर्ज',
+                'footer.address.title': 'गोल्डन पैलेस',
+                'footer.address.details': 'लक्‍जुरी टॉवर, दुबई',
+                'footer.phone.title': 'हॉटलाइन',
+                'footer.newsletter.title': 'न्यूज़लेटर',
+                'footer.newsletter.description': 'कुलीन सूची में शामिल हों।',
+                'footer.newsletter.placeholder': 'आपका ईमेल',
+                'footer.newsletter.subscribe': 'सदस्यता लें'
+            },
+            es: {
+                // Spanish
+                'logo': 'LUXO<span>HOTEL</span>',
+                'nav.home': 'Inicio',
+                'nav.rooms': 'Suites',
+                'nav.facilities': 'Instalaciones',
+                'nav.booking': 'Reservas',
+                'nav.contact': 'Contacto',
+                'hero.subtitle': 'Lujo Absoluto',
+                'hero.title': 'Estancia Real en el Mundo Luxuri',
+                'hero.description': 'El Hotel Luxuri no es solo un lugar para alojarse, sino un mundo de lujo absoluto donde cada huésped se convierte en realeza. En el corazón de Dubái, ofrecemos una experiencia de alojamiento que supera las expectativas y redefine el concepto de lujo.',
+                'hero.cta': 'Descubrir Suites Reales',
+                'numbers.suites': 'Suites Reales Exclusivas',
+                'numbers.restaurants': 'Restaurantes con Estrellas',
+                'numbers.awards': 'Premios de Excelencia Global',
+                'numbers.staff': 'Proporción de Personal por Huésped',
+                'rooms.subtitle': 'Mundo de Suites Reales',
+                'rooms.title.part1': 'Suites',
+                'rooms.title.part2': 'Reales',
+                'rooms.description': 'Cada suite en Luxuri es una obra maestra independiente, diseñada por los mejores diseñadores de interiores internacionales, equipada con tecnologías inteligentes avanzadas y con vistas panorámicas impresionantes.',
+                'rooms.perNight': 'noche',
+                'rooms.presidential.title': 'Suite Presidencial',
+                'rooms.presidential.features.area': '1200 m²',
+                'rooms.presidential.features.pool': 'Piscina Interior',
+                'rooms.presidential.features.theater': 'Teatro Privado',
+                'rooms.presidential.features.wine': 'Bodega de Vinos',
+                'rooms.presidential.description': 'Obra maestra arquitectónica de 1200 metros cuadrados, con vista de 360 grados de Dubái.',
+                'rooms.classic.title': 'Suite Clásica',
+                'rooms.classic.features.area': '800 m²',
+                'rooms.classic.features.garage': 'Garaje Privado',
+                'rooms.classic.features.air': 'Aire Fresco',
+                'rooms.classic.features.pool': 'Piscina Infinita',
+                'rooms.classic.description': 'Diseño único que combina oro y ámbar negro con jacuzzi de agua mineral.',
+                'rooms.corniche.title': 'Suite Corniche',
+                'rooms.corniche.features.waterfall': 'Cascada Interior',
+                'rooms.corniche.features.aquarium': 'Acuario',
+                'rooms.corniche.features.spa': 'Spa Privado',
+                'rooms.corniche.features.games': 'Juegos Inteligentes',
+                'rooms.corniche.description': 'Diseño marino de lujo con colores zafiro azul y tratamientos marinos.',
+                'rooms.oasis.title': 'Suite Oasis',
+                'rooms.oasis.features.garden': 'Jardín Interior',
+                'rooms.oasis.features.palms': 'Palmeras',
+                'rooms.oasis.features.birds': 'Aves Ornamentales',
+                'rooms.oasis.features.beach': 'Playa Privada',
+                'rooms.oasis.description': 'Suite ecológica que combina lujo y naturaleza impresionante.',
+                'rooms.crystal.title': 'Suite Cristal',
+                'rooms.crystal.features.walls': 'Paredes de Cristal',
+                'rooms.crystal.features.chandeliers': 'Candelabros de Diamante',
+                'rooms.crystal.features.cooling': 'Enfriamiento Inteligente',
+                'rooms.crystal.features.icebar': 'Bar de Helados',
+                'rooms.crystal.description': 'Diseño de cristal puro con candelabros hechos de diamantes reales.',
+                'rooms.royal.title': 'Suite Royal',
+                'rooms.royal.features.fireplace': 'Chimenea de Piedra',
+                'rooms.royal.features.furniture': 'Muebles Clásicos',
+                'rooms.royal.features.library': 'Biblioteca Rara',
+                'rooms.royal.features.bar': 'Bar Tradicional',
+                'rooms.royal.description': 'Diseño clásico de lujo con muebles raros de caoba.',
+                'rooms.moon.title': 'Suite Luna',
+                'rooms.moon.features.lighting': 'Iluminación Lunar',
+                'rooms.moon.features.ceiling': 'Techo Estrellado',
+                'rooms.moon.features.cloud': 'Habitación Nube',
+                'rooms.moon.features.sound': 'Sonido Celestial',
+                'rooms.moon.description': 'Diseño celestial único con techo estrellado móvil e iluminación lunar.',
+                'rooms.romantic.title': 'Suite Romántica',
+                'rooms.romantic.features.design': 'Diseño Romántico',
+                'rooms.romantic.features.garden': 'Jardín de Rosas',
+                'rooms.romantic.features.champagne': 'Champán',
+                'rooms.romantic.features.wedding': 'Habitación de Boda',
+                'rooms.romantic.description': 'Suite dedicada a parejas con jardín interior de rosas y champán exclusivo.',
+                'rooms.lagoon.title': 'Suite Laguna',
+                'rooms.lagoon.features.waterfall': 'Cascada de Agua',
+                'rooms.lagoon.features.jacuzzi': 'Jacuzzi Turquesa',
+                'rooms.lagoon.features.beach': 'Playa Interior',
+                'rooms.lagoon.features.marine': 'Diseño Marino',
+                'rooms.lagoon.description': 'Diseño marino turquesa inspirado en los mares tropicales más hermosos.',
+                'rooms.emperor.title': 'Suite Emperador',
+                'rooms.emperor.features.area': '1500 m²',
+                'rooms.emperor.features.golf': 'Campo de Golf',
+                'rooms.emperor.features.casino': 'Casino Privado',
+                'rooms.emperor.features.helipad': 'Helipuerto',
+                'rooms.emperor.description': 'La suite más lujosa del mundo con 1500 metros cuadrados y servicios reales excepcionales.',
+                'facilities.subtitle': 'Mundo de Cinco Estrellas',
+                'facilities.title.part1': 'Instalaciones',
+                'facilities.title.part2': 'de Lujo',
+                'facilities.description': 'Las instalaciones de Luxuri ofrecen experiencias exclusivas que solo se encuentran en los mejores resorts internacionales, diseñadas para satisfacer los gustos de la élite y proporcionar un disfrute sin fin.',
+                'facilities.spa.title': 'Spa Cristal',
+                'facilities.spa.description': 'Resort de bienestar con piscinas de mármol, tratamientos de la más alta calidad.',
+                'facilities.pool.title': 'Piscina Nube',
+                'facilities.pool.description': 'Piscina a 300 metros de altura con suelo de cristal con vista a la ciudad.',
+                'facilities.club.title': 'Club de la Familia Real',
+                'facilities.club.description': 'Club exclusivo para miembros de la realeza y presidentes.',
+                'facilities.helicopter.title': 'Helipuerto',
+                'facilities.helicopter.description': 'Helipuerto privado con transporte aéreo VIP y coches Rolls Royce.',
+                'booking.vip': 'Experiencia VIP',
+                'booking.title.part1': 'Reserva',
+                'booking.title.part2': 'Real',
+                'booking.description': 'El equipo de reservas reales de Luxuri está listo para organizar cada detalle de su estancia.',
+                'booking.membership': 'Beneficios de Membresía',
+                'booking.benefits.manager': 'Conserje Personal 24/7',
+                'booking.benefits.access': 'Acceso Exclusivo a Clubes',
+                'booking.benefits.car': 'Servicio Rolls Royce y Bentley',
+                'booking.form.title': 'Detalles',
+                'booking.form.subtitle': 'de Reserva',
+                'booking.form.name': 'Nombre Completo',
+                'booking.form.email': 'Correo Electrónico',
+                'booking.form.phone': 'Número de Teléfono',
+                'booking.form.roomType': 'Tipo de Suite',
+                'booking.form.select': 'Seleccionar',
+                'booking.form.rooms.presidential': 'Suite Presidencial - $5,000/noche',
+                'booking.form.rooms.classic': 'Suite Clásica - $3,500/noche',
+                'booking.form.rooms.corniche': 'Suite Corniche - $4,200/noche',
+                'booking.form.rooms.oasis': 'Suite Oasis - $3,800/noche',
+                'booking.form.rooms.crystal': 'Suite Cristal - $4,500/noche',
+                'booking.form.rooms.royal': 'Suite Royal - $3,200/noche',
+                'booking.form.rooms.moon': 'Suite Luna - $4,000/noche',
+                'booking.form.rooms.romantic': 'Suite Romántica - $3,900/noche',
+                'booking.form.rooms.lagoon': 'Suite Laguna - $3,600/noche',
+                'booking.form.rooms.emperor': 'Suite Emperador - $6,000/noche',
+                'booking.form.checkIn': 'Fecha de Entrada',
+                'booking.form.checkOut': 'Fecha de Salida',
+                'booking.form.submit': 'Confirmar Reserva Real',
+                'footer.logo': 'LUXO<span>HOTEL</span>',
+                'footer.description': 'Luxuri no es un hotel, sino un mundo de lujo absoluto en el corazón de Dubái.',
+                'footer.world': 'Mundo de',
+                'footer.luxuri': 'Luxuri',
+                'footer.links.palace': 'Palacio Real',
+                'footer.links.suites': 'Suites Imperiales',
+                'footer.links.facilities': 'Instalaciones de Élite',
+                'footer.concierge': 'Conserjería',
+                'footer.royal': 'Real',
+                'footer.address.title': 'Palacio Dorado',
+                'footer.address.details': 'Torre Luxuri, Dubái',
+                'footer.phone.title': 'Línea Directa',
+                'footer.newsletter.title': 'Boletín',
+                'footer.newsletter.description': 'Únase a la lista de élite.',
+                'footer.newsletter.placeholder': 'Su Correo Electrónico',
+                'footer.newsletter.subscribe': 'Suscribirse'
+            },
+            fr: {
+                // French
+                'logo': 'LUXE<span>HÔTEL</span>',
+                'nav.home': 'Accueil',
+                'nav.rooms': 'Suites',
+                'nav.facilities': 'Équipements',
+                'nav.booking': 'Réservation',
+                'nav.contact': 'Contact',
+                'hero.subtitle': 'Luxe Absolu',
+                'hero.title': 'Séjour Royal dans le Monde Luxuri',
+                'hero.description': "L'Hôtel Luxuri n'est pas seulement un lieu de séjour, mais un monde de luxe absolu où chaque invité devient royal. Au cœur de Dubaï, nous offrons une expérience de séjour qui dépasse les attentes et redéfinit le concept de luxe.",
+                'hero.cta': 'Découvrir les Suites Royales',
+                'numbers.suites': 'Suites Royales Exclusives',
+                'numbers.restaurants': 'Restaurants Étoilés',
+                'numbers.awards': "Prix d'Excellence Mondiaux",
+                'numbers.staff': "Ratio Personnel par Invité",
+                'rooms.subtitle': 'Monde des Suites Royales',
+                'rooms.title.part1': 'Suites',
+                'rooms.title.part2': 'Royales',
+                'rooms.description': 'Chaque suite chez Luxuri est un chef-d\'œuvre indépendant, conçu par les plus grands designers d\'intérieur internationaux, équipé de technologies intelligentes avancées et offrant des vues panoramiques époustouflantes.',
+                'rooms.perNight': 'nuit',
+                'rooms.presidential.title': 'Suite Présidentielle',
+                'rooms.presidential.features.area': '1200 m²',
+                'rooms.presidential.features.pool': 'Piscine Intérieure',
+                'rooms.presidential.features.theater': 'Théâtre Privé',
+                'rooms.presidential.features.wine': 'Cave à Vin',
+                'rooms.presidential.description': 'Chef-d\'œuvre architectural de 1200 mètres carrés, avec vue à 360 degrés sur Dubaï.',
+                'rooms.classic.title': 'Suite Classique',
+                'rooms.classic.features.area': '800 m²',
+                'rooms.classic.features.garage': 'Garage Privé',
+                'rooms.classic.features.air': 'Air Pur',
+                'rooms.classic.features.pool': 'Piscine à Débordement',
+                'rooms.classic.description': 'Design unique combinant or et ambre noir avec jacuzzi à eau minérale.',
+                'rooms.corniche.title': 'Suite Corniche',
+                'rooms.corniche.features.waterfall': 'Cascade Intérieure',
+                'rooms.corniche.features.aquarium': 'Aquarium',
+                'rooms.corniche.features.spa': 'Spa Privé',
+                'rooms.corniche.features.games': 'Jeux Intelligents',
+                'rooms.corniche.description': 'Design marin de luxe avec couleurs saphir bleu et traitements marins.',
+                'rooms.oasis.title': "Suite Oasis",
+                'rooms.oasis.features.garden': 'Jardin Intérieur',
+                'rooms.oasis.features.palms': 'Palmiers',
+                'rooms.oasis.features.birds': 'Oiseaux Ornementaux',
+                'rooms.oasis.features.beach': 'Plage Privée',
+                'rooms.oasis.description': "Suite écologique alliant luxe et nature époustouflante.",
+                'rooms.crystal.title': 'Suite Cristal',
+                'rooms.crystal.features.walls': 'Murs de Cristal',
+                'rooms.crystal.features.chandeliers': 'Lustres en Diamant',
+                'rooms.crystal.features.cooling': 'Refroidissement Intelligent',
+                'rooms.crystal.features.icebar': 'Bar à Glaces',
+                'rooms.crystal.description': 'Design de cristal pur avec lustres en diamants réels.',
+                'rooms.royal.title': 'Suite Royale',
+                'rooms.royal.features.fireplace': 'Cheminée en Pierre',
+                'rooms.royal.features.furniture': 'Meubles Classiques',
+                'rooms.royal.features.library': 'Bibliothèque Rare',
+                'rooms.royal.features.bar': 'Bar Traditionnel',
+                'rooms.royal.description': 'Design classique de luxe avec meubles rares en acajou.',
+                'rooms.moon.title': 'Suite Lune',
+                'rooms.moon.features.lighting': 'Éclairage Lunaire',
+                'rooms.moon.features.ceiling': 'Plafond Étoilé',
+                'rooms.moon.features.cloud': 'Chambre Nuage',
+                'rooms.moon.features.sound': 'Son Céleste',
+                'rooms.moon.description': 'Design céleste unique avec plafond étoilé mobile et éclairage lunaire.',
+                'rooms.romantic.title': 'Suite Romantique',
+                'rooms.romantic.features.design': 'Design Romantique',
+                'rooms.romantic.features.garden': 'Jardin de Roses',
+                'rooms.romantic.features.champagne': 'Champagne',
+                'rooms.romantic.features.wedding': 'Chambre de Mariage',
+                'rooms.romantic.description': 'Suite dédiée aux couples avec jardin de roses intérieur et champagne exclusif.',
+                'rooms.lagoon.title': 'Suite Lagon',
+                'rooms.lagoon.features.waterfall': 'Cascade d\'Eau',
+                'rooms.lagoon.features.jacuzzi': 'Jacuzzi Turquoise',
+                'rooms.lagoon.features.beach': 'Plage Intérieure',
+                'rooms.lagoon.features.marine': 'Design Marin',
+                'rooms.lagoon.description': 'Design marin turquoise inspiré des plus belles mers tropicales.',
+                'rooms.emperor.title': "Suite Empereur",
+                'rooms.emperor.features.area': '1500 m²',
+                'rooms.emperor.features.golf': 'Terrain de Golf',
+                'rooms.emperor.features.casino': 'Casino Privé',
+                'rooms.emperor.features.helipad': 'Héliport',
+                'rooms.emperor.description': "La suite la plus luxueuse du monde avec 1500 mètres carrés et des services royaux exceptionnels.",
+                'facilities.subtitle': 'Monde Cinq Étoiles',
+                'facilities.title.part1': 'Équipements',
+                'facilities.title.part2': 'de Luxe',
+                'facilities.description': "Les installations de Luxuri offrent des expériences exclusives que l'on ne trouve que dans les meilleurs resorts internationaux, conçues pour satisfaire les goûts de l'élite et offrir un plaisir sans fin.",
+                'facilities.spa.title': 'Spa Cristal',
+                'facilities.spa.description': 'Centre de bien-être avec piscines de marbre, traitements de la plus haute qualité.',
+                'facilities.pool.title': 'Piscine Nuage',
+                'facilities.pool.description': 'Piscine à 300 mètres de hauteur avec plancher de verre surplombant la ville.',
+                'facilities.club.title': 'Club de la Famille Royale',
+                'facilities.club.description': "Club exclusif pour les membres de la famille royale et les présidents.",
+                'facilities.helicopter.title': 'Héliport',
+                'facilities.helicopter.description': "Héliport privé avec transport aérien VIP et voitures Rolls Royce.",
+                'booking.vip': 'Expérience VIP',
+                'booking.title.part1': 'Réservation',
+                'booking.title.part2': 'Royale',
+                'booking.description': "L'équipe de réservation royale de Luxuri est prête à organiser chaque détail de votre séjour.",
+                'booking.membership': 'Avantages Membres',
+                'booking.benefits.manager': 'Concierge Personnel 24/7',
+                'booking.benefits.access': 'Accès Exclusif aux Clubs',
+                'booking.benefits.car': 'Service Rolls Royce et Bentley',
+                'booking.form.title': 'Détails',
+                'booking.form.subtitle': 'de Réservation',
+                'booking.form.name': 'Nom Complet',
+                'booking.form.email': 'Adresse E-mail',
+                'booking.form.phone': 'Numéro de Téléphone',
+                'booking.form.roomType': 'Type de Suite',
+                'booking.form.select': 'Sélectionner',
+                'booking.form.rooms.presidential': 'Suite Présidentielle - $5,000/nuit',
+                'booking.form.rooms.classic': 'Suite Classique - $3,500/nuit',
+                'booking.form.rooms.corniche': 'Suite Corniche - $4,200/nuit',
+                'booking.form.rooms.oasis': "Suite Oasis - $3,800/nuit",
+                'booking.form.rooms.crystal': 'Suite Cristal - $4,500/nuit',
+                'booking.form.rooms.royal': 'Suite Royale - $3,200/nuit',
+                'booking.form.rooms.moon': 'Suite Lune - $4,000/nuit',
+                'booking.form.rooms.romantic': 'Suite Romantique - $3,900/nuit',
+                'booking.form.rooms.lagoon': 'Suite Lagon - $3,600/nuit',
+                'booking.form.rooms.emperor': "Suite Empereur - $6,000/nuit",
+                'booking.form.checkIn': "Date d'Arrivée",
+                'booking.form.checkOut': 'Date de Départ',
+                'booking.form.submit': 'Confirmer la Réservation Royale',
+                'footer.logo': 'LUXE<span>HÔTEL</span>',
+                'footer.description': "Luxuri n'est pas un hôtel, mais un monde de luxe absolu au cœur de Dubaï.",
+                'footer.world': 'Monde de',
+                'footer.luxuri': 'Luxuri',
+                'footer.links.palace': 'Palais Royal',
+                'footer.links.suites': 'Suites Impériales',
+                'footer.links.facilities': "Équipements d'Élite",
+                'footer.concierge': 'Conciergerie',
+                'footer.royal': 'Royale',
+                'footer.address.title': 'Palais Doré',
+                'footer.address.details': 'Tour Luxuri, Dubaï',
+                'footer.phone.title': 'Ligne Directe',
+                'footer.newsletter.title': 'Bulletin',
+                'footer.newsletter.description': "Rejoignez la liste d'élite.",
+                'footer.newsletter.placeholder': 'Votre E-mail',
+                'footer.newsletter.subscribe': "S'abonner"
+            },
+            ru: {
+                // Russian
+                'logo': 'LUXURY<span>HOTEL</span>',
+                'nav.home': 'Главная',
+                'nav.rooms': 'Люксы',
+                'nav.facilities': 'Удобства',
+                'nav.booking': 'Бронирование',
+                'nav.contact': 'Контакты',
+                'hero.subtitle': 'Абсолютная Роскошь',
+                'hero.title': 'Королевское Пребывание в Мире Luxuri',
+                'hero.description': 'Отель Luxuri - это не просто место для проживания, а мир абсолютной роскоши, где каждый гость становится королевской особой. В самом сердце Дубая мы предлагаем опыт проживания, который превосходит ожидания и переопределяет понятие роскоши.',
+                'hero.cta': 'Открыть Королевские Люксы',
+                'numbers.suites': 'Эксклюзивные Королевские Люксы',
+                'numbers.restaurants': 'Рестораны со Звездами',
+                'numbers.awards': 'Награды Глобального Превосходства',
+                'numbers.staff': 'Соотношение Персонала на Гостя',
+                'rooms.subtitle': 'Мир Королевских Люксов',
+                'rooms.title.part1': 'Королевские',
+                'rooms.title.part2': 'Люксы',
+                'rooms.description': 'Каждый люкс в Luxuri - это независимый шедевр, созданный ведущими международными дизайнерами интерьера, оснащенный передовыми интеллектуальными технологиями и открывающий захватывающие панорамные виды.',
+                'rooms.perNight': 'ночь',
+                'rooms.presidential.title': 'Президентский Люкс',
+                'rooms.presidential.features.area': '1200 м²',
+                'rooms.presidential.features.pool': 'Крытый Бассейн',
+                'rooms.presidential.features.theater': 'Частный Театр',
+                'rooms.presidential.features.wine': 'Винный Погреб',
+                'rooms.presidential.description': 'Архитектурный шедевр площадью 1200 квадратных метров с 360-градусным видом на Дубай.',
+                'rooms.classic.title': 'Классический Люкс',
+                'rooms.classic.features.area': '800 м²',
+                'rooms.classic.features.garage': 'Частный Гараж',
+                'rooms.classic.features.air': 'Свежий Воздух',
+                'rooms.classic.features.pool': 'Бесконечный Бассейн',
+                'rooms.classic.description': 'Уникальный дизайн, сочетающий золото и черный янтарь с джакузи с минеральной водой.',
+                'rooms.corniche.title': 'Люкс Корниш',
+                'rooms.corniche.features.waterfall': 'Водопад в Помещении',
+                'rooms.corniche.features.aquarium': 'Аквариум',
+                'rooms.corniche.features.spa': 'Частный Спа',
+                'rooms.corniche.features.games': 'Умные Игры',
+                'rooms.corniche.description': 'Роскошный морской дизайн с сапфирово-голубыми цветами и морскими процедурами.',
+                'rooms.oasis.title': 'Люкс Оазис',
+                'rooms.oasis.features.garden': 'Сад в Помещении',
+                'rooms.oasis.features.palms': 'Пальмы',
+                'rooms.oasis.features.birds': 'Декоративные Птицы',
+                'rooms.oasis.features.beach': 'Частный Пляж',
+                'rooms.oasis.description': 'Экологичный люкс, сочетающий роскошь и захватывающую природу.',
+                'rooms.crystal.title': 'Люкс Кристалл',
+                'rooms.crystal.features.walls': 'Кристальные Стены',
+                'rooms.crystal.features.chandeliers': 'Бриллиантовые Люстры',
+                'rooms.crystal.features.cooling': 'Умное Охлаждение',
+                'rooms.crystal.features.icebar': 'Бар Мороженого',
+                'rooms.crystal.description': 'Чистый кристальный дизайн с люстрами из настоящих бриллиантов.',
+                'rooms.royal.title': 'Люкс Роял',
+                'rooms.royal.features.fireplace': 'Каменный Камин',
+                'rooms.royal.features.furniture': 'Классическая Мебель',
+                'rooms.royal.features.library': 'Редкая Библиотека',
+                'rooms.royal.features.bar': 'Традиционный Бар',
+                'rooms.royal.description': 'Роскошный классический дизайн с редкой мебелью из красного дерева.',
+                'rooms.moon.title': 'Люкс Луна',
+                'rooms.moon.features.lighting': 'Лунное Освещение',
+                'rooms.moon.features.ceiling': 'Звездный Потолок',
+                'rooms.moon.features.cloud': 'Облачная Комната',
+                'rooms.moon.features.sound': 'Небесный Звук',
+                'rooms.moon.description': 'Уникальный небесный дизайн с движущимся звездным потолком и лунным освещением.',
+                'rooms.romantic.title': 'Романтический Люкс',
+                'rooms.romantic.features.design': 'Романтический Дизайн',
+                'rooms.romantic.features.garden': 'Розовый Сад',
+                'rooms.romantic.features.champagne': 'Шампанское',
+                'rooms.romantic.features.wedding': 'Свадебная Комната',
+                'rooms.romantic.description': 'Люкс, предназначенный для пар с садом роз в помещении и эксклюзивным шампанским.',
+                'rooms.lagoon.title': 'Люкс Лагуна',
+                'rooms.lagoon.features.waterfall': 'Водный Водопад',
+                'rooms.lagoon.features.jacuzzi': 'Бирюзовое Джакузи',
+                'rooms.lagoon.features.beach': 'Пляж в Помещении',
+                'rooms.lagoon.features.marine': 'Морской Дизайн',
+                'rooms.lagoon.description': 'Бирюзовый морской дизайн, вдохновленный самыми красивыми тропическими морями.',
+                'rooms.emperor.title': 'Люкс Император',
+                'rooms.emperor.features.area': '1500 м²',
+                'rooms.emperor.features.golf': 'Поле для Гольфа',
+                'rooms.emperor.features.casino': 'Частное Казино',
+                'rooms.emperor.features.helipad': 'Вертолетная Площадка',
+                'rooms.emperor.description': 'Самый роскошный люкс в мире площадью 1500 квадратных метров с исключительными королевскими услугами.',
+                'facilities.subtitle': 'Пятизвездочный Мир',
+                'facilities.title.part1': 'Роскошные',
+                'facilities.title.part2': 'Удобства',
+                'facilities.description': 'Удобства Luxuri предлагают эксклюзивные впечатления, которые можно найти только в лучших международных курортах, созданные для удовлетворения элитных вкусов и обеспечения бесконечного удовольствия.',
+                'facilities.spa.title': 'Кристальный Спа',
+                'facilities.spa.description': 'Оздоровительный курорт с мраморными бассейнами, процедурами высочайшего качества.',
+                'facilities.pool.title': 'Облачный Бассейн',
+                'facilities.pool.description': 'Бассейн на высоте 300 метров со стеклянным полом с видом на город.',
+                'facilities.club.title': 'Клуб Королевской Семьи',
+                'facilities.club.description': 'Эксклюзивный клуб для членов королевских семей и президентов.',
+                'facilities.helicopter.title': 'Вертолетная Площадка',
+                'facilities.helicopter.description': 'Частная вертолетная площадка с VIP-воздушным транспортом и автомобилями Rolls Royce.',
+                'booking.vip': 'VIP Опыт',
+                'booking.title.part1': 'Королевское',
+                'booking.title.part2': 'Бронирование',
+                'booking.description': 'Команда королевского бронирования в Luxuri готова организовать каждую деталь вашего пребывания.',
+                'booking.membership': 'Преимущества Членства',
+                'booking.benefits.manager': 'Личный Консьерж 24/7',
+                'booking.benefits.access': 'Эксклюзивный Доступ в Клубы',
+                'booking.benefits.car': 'Сервис Rolls Royce и Bentley',
+                'booking.form.title': 'Детали',
+                'booking.form.subtitle': 'Бронирования',
+                'booking.form.name': 'Полное Имя',
+                'booking.form.email': 'Электронная Почта',
+                'booking.form.phone': 'Номер Телефона',
+                'booking.form.roomType': 'Тип Люкса',
+                'booking.form.select': 'Выбрать',
+                'booking.form.rooms.presidential': 'Президентский Люкс - $5,000/ночь',
+                'booking.form.rooms.classic': 'Классический Люкс - $3,500/ночь',
+                'booking.form.rooms.corniche': 'Люкс Корниш - $4,200/ночь',
+                'booking.form.rooms.oasis': 'Люкс Оазис - $3,800/ночь',
+                'booking.form.rooms.crystal': 'Люкс Кристалл - $4,500/ночь',
+                'booking.form.rooms.royal': 'Люкс Роял - $3,200/ночь',
+                'booking.form.rooms.moon': 'Люкс Луна - $4,000/ночь',
+                'booking.form.rooms.romantic': 'Романтический Люкс - $3,900/ночь',
+                'booking.form.rooms.lagoon': 'Люкс Лагуна - $3,600/ночь',
+                'booking.form.rooms.emperor': 'Люкс Император - $6,000/ночь',
+                'booking.form.checkIn': 'Дата Заезда',
+                'booking.form.checkOut': 'Дата Выезда',
+                'booking.form.submit': 'Подтвердить Королевское Бронирование',
+                'footer.logo': 'LUXURY<span>HOTEL</span>',
+                'footer.description': 'Luxuri - это не отель, а мир абсолютной роскоши в самом сердце Дубая.',
+                'footer.world': 'Мир',
+                'footer.luxuri': 'Luxuri',
+                'footer.links.palace': 'Королевский Дворец',
+                'footer.links.suites': 'Императорские Люксы',
+                'footer.links.facilities': 'Элитные Удобства',
+                'footer.concierge': 'Королевский',
+                'footer.royal': 'Консьерж',
+                'footer.address.title': 'Золотой Дворец',
+                'footer.address.details': 'Башня Luxuri, Дубай',
+                'footer.phone.title': 'Горячая Линия',
+                'footer.newsletter.title': 'Новостная Рассылка',
+                'footer.newsletter.description': 'Присоединяйтесь к элитному списку.',
+                'footer.newsletter.placeholder': 'Ваш Email',
+                'footer.newsletter.subscribe': 'Подписаться'
+            }
+        };
+
+        // تحديد اللغة الحالية
+        let currentLang = 'ar';
+
+        // تغيير اتجاه الصفحة حسب اللغة
+        function setDirection(lang) {
+            const html = document.documentElement;
+            if (lang === 'ar') {
+                html.setAttribute('dir', 'rtl');
+                html.setAttribute('lang', 'ar');
+            } else {
+                html.setAttribute('dir', 'ltr');
+                html.setAttribute('lang', lang);
+            }
+            document.body.setAttribute('lang', lang);
+        }
+
+        // تحديث النصوص حسب اللغة المحددة
+        function translatePage(lang) {
+            const elements = document.querySelectorAll('[data-i18n]');
+            elements.forEach(element => {
+                const key = element.getAttribute('data-i18n');
+                if (translations[lang] && translations[lang][key]) {
+                    if (element.tagName === 'INPUT' && element.getAttribute('data-i18n-placeholder')) {
+                        element.setAttribute('placeholder', translations[lang][key]);
+                    } else if (element.tagName === 'SELECT' && element.options) {
+                        // للعناصر المحددة
+                        element.innerHTML = translations[lang][key];
+                    } else if (element.tagName === 'OPTION') {
+                        element.textContent = translations[lang][key];
+                    } else {
+                        element.innerHTML = translations[lang][key];
+                    }
+                }
+            });
+
+            // تحديث عناصر placeholder بشكل منفصل
+            document.querySelectorAll('[data-i18n-placeholder]').forEach(element => {
+                const key = element.getAttribute('data-i18n-placeholder');
+                if (translations[lang] && translations[lang][key]) {
+                    element.setAttribute('placeholder', translations[lang][key]);
+                }
+            });
+
+            // تحديث النص المعروض في محدد اللغة
+            const selectedLangSpan = document.querySelector('.selected-language span');
+            const selectedLangOption = document.querySelector(`.language-option[data-lang="${lang}"] span`);
+            if (selectedLangSpan && selectedLangOption) {
+                selectedLangSpan.textContent = selectedLangOption.textContent;
+            }
+
+            // تحديث اتجاه الصفحة
+            setDirection(lang);
+        }
+
+        // تبديل محدد اللغة
+        const languageSelector = document.getElementById('languageSelector');
+        const selectedLangDiv = languageSelector.querySelector('.selected-language');
+
+        selectedLangDiv.addEventListener('click', (e) => {
+            e.stopPropagation();
+            languageSelector.classList.toggle('active');
+        });
+
+        // اختيار اللغة
+        document.querySelectorAll('.language-option').forEach(option => {
+            option.addEventListener('click', () => {
+                const lang = option.getAttribute('data-lang');
+
+                // إزالة الكلاس النشط من جميع الخيارات
+                document.querySelectorAll('.language-option').forEach(opt => {
+                    opt.classList.remove('active');
+                });
+
+                // إضافة الكلاس النشط للخيار المحدد
+                option.classList.add('active');
+
+                // تحديث اللغة الحالية وترجمة الصفحة
+                currentLang = lang;
+                translatePage(lang);
+
+                // إغلاق القائمة المنسدلة
+                languageSelector.classList.remove('active');
+            });
+        });
+
+        // إغلاق القائمة عند النقر خارجها
+        document.addEventListener('click', (e) => {
+            if (!languageSelector.contains(e.target)) {
+                languageSelector.classList.remove('active');
+            }
+        });
+
+        // تأثير الهيدر عند التمرير
+        window.addEventListener('scroll', () => {
+            document.getElementById('header').classList.toggle('scrolled', window.scrollY > 100);
+        });
+
+        // قائمة الهاتف المحمول
+        const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+        const mainNav = document.getElementById('mainNav');
+
+        mobileMenuBtn.addEventListener('click', (e) => {
+            e.stopPropagation();
+            mainNav.classList.toggle('active');
+            mobileMenuBtn.innerHTML = mainNav.classList.contains('active') ? '<i class="fas fa-times"></i>' : '<i class="fas fa-bars"></i>';
+            document.body.style.overflow = mainNav.classList.contains('active') ? 'hidden' : '';
+        });
+
+        // إغلاق القائمة عند النقر على رابط
+        document.querySelectorAll('#mainNav a').forEach(link => {
+            link.addEventListener('click', () => {
+                mainNav.classList.remove('active');
+                mobileMenuBtn.innerHTML = '<i class="fas fa-bars"></i>';
+                document.body.style.overflow = '';
+            });
+        });
+
+        // إغلاق القائمة عند النقر خارجها
+        document.addEventListener('click', (e) => {
+            if (mainNav.classList.contains('active') && !mainNav.contains(e.target) && !mobileMenuBtn.contains(e.target)) {
+                mainNav.classList.remove('active');
+                mobileMenuBtn.innerHTML = '<i class="fas fa-bars"></i>';
+                document.body.style.overflow = '';
+            }
+        });
+
+        // تأثير الظهور التدريجي
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) entry.target.classList.add('visible');
+            });
+        }, { threshold: 0.1, rootMargin: '0px 0px -50px 0px' });
+        document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+
+        // تعيين تواريخ الحجز
+        const today = new Date().toISOString().split('T')[0];
+        const checkIn = document.getElementById('checkIn');
+        const checkOut = document.getElementById('checkOut');
+        if (checkIn && checkOut) {
+            checkIn.setAttribute('min', today);
+            checkIn.value = today;
+            const tomorrow = new Date(Date.now() + 2 * 24 * 60 * 60 * 1000).toISOString().split('T')[0];
+            checkOut.value = tomorrow;
+            checkOut.setAttribute('min', today);
+        }
+
+        // تمرير سلس للروابط
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const targetId = this.getAttribute('href');
+                if (targetId === '#') return;
+                const targetElement = document.querySelector(targetId);
+                if (targetElement) {
+                    window.scrollTo({ top: targetElement.offsetTop - 80, behavior: 'smooth' });
+                }
+            });
+        });
+
+        // دعم اللمس لبطاقات الغرف
+        if ('ontouchstart' in window) {
+            document.querySelectorAll('.room-card').forEach(card => {
+                card.addEventListener('click', function () {
+                    if (this.classList.contains('active')) {
+                        this.classList.remove('active');
+                    } else {
+                        document.querySelectorAll('.room-card').forEach(c => c.classList.remove('active'));
+                        this.classList.add('active');
+                    }
+                });
+            });
+        }
+
+        // إنشاء جزيئات عائمة في الخلفية
+        function createFloatingParticles() {
+            const bgPattern = document.querySelector('.bg-pattern');
+            for (let i = 0; i < 15; i++) {
+                const particle = document.createElement('div');
+                particle.style.position = 'fixed';
+                particle.style.width = Math.random() * 3 + 1 + 'px';
+                particle.style.height = particle.style.width;
+                particle.style.background = 'rgba(212, 175, 55, 0.2)';
+                particle.style.borderRadius = '50%';
+                particle.style.top = Math.random() * 100 + 'vh';
+                particle.style.left = Math.random() * 100 + 'vw';
+                particle.style.zIndex = '-1';
+                particle.style.animation = `float ${Math.random() * 10 + 10}s infinite ease-in-out`;
+                bgPattern.appendChild(particle);
+            }
+        }
+        createFloatingParticles();
+    </script>
+</body>
+
+</html>
